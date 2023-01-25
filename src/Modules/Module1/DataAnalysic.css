@@ -1,0 +1,120 @@
+:root {
+    --blue: #20e2d7;
+    --yellow: #f6eea7;
+    --gradient: linear-gradient(to right, #20e2d7 0%, #f6eea7 100%);
+    --leftgradient: linear-gradient(to right, #f6eea7 0%, #20e2d7 100%);
+    --smallText: #A8A8A8;
+    --mediumText: #DFDFDF;
+    --buttonColor: #3D3D3D;
+    --backgroundColor: #F9F9F9;
+    --white: #FFFFFF;
+    --dark: #252525;
+    --grey: #4A4A4A;
+    --endFooter: #2B2B2B;
+}
+
+.dataanalysic-container {
+    width: 100%;
+    height: 75vh;
+    background-color: var(--backgroundColor);
+    margin: 0%;
+    padding: 0%;
+    margin-top: -10px;
+    position: fixed;
+}
+
+.Data-container {
+    height: 75vh;
+    width: 100%;
+    background-color: var(--dark);
+    margin-top: -16px;
+}
+
+.Data-para-1 {
+    color: var(--smallText);
+    margin-left: 140px;
+    padding-top: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.Data-heading-1 {
+    color: var(--white);
+    margin-left: 140px;
+    font-size: 60px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.Data-heading-2 {
+    background: var(--gradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 140px;
+    font-size: 60px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.Data-para-2 {
+    color: var(--white);
+    margin-left: 140px;
+}
+
+.Data-btn {
+    margin-left: 140px;
+    gap: 1rem;
+    padding-top: 10px;
+}
+
+.Data-btn-1 {
+    background: none;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 20px;
+    background: var(--gradient);
+    font-size: 15px;
+    color: var(--buttonColor);
+    border: none;
+}
+
+.Data-btn-1:hover {
+    background: var(--leftgradient);
+    cursor: pointer;
+}
+
+.Data-btn-2 {
+    margin-left: 30px;
+    background: none;
+    padding: 15px 30px 15px 30px;
+    border-radius: 20px;
+    border: 1px solid white;
+    font-weight: bold;
+    font-size: 15px;
+    color: var(--white);
+}
+
+.Data-btn-2:hover {
+    background-color: var(--buttonColor);
+    border: 1px solid var(--buttonColor);
+    cursor: pointer;
+}
+
+.Data-para-3 {
+    color: var(--smallText);
+    margin-left: 140px;
+    padding-top: 10px;
+    font-style: italic;
+}
+.video-container{
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 700px;
+    top: 50px;
+}
+.video-img{
+    width: 85vh;
+    height: 60vh;
+}
