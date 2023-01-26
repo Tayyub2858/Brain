@@ -105,7 +105,24 @@ const Footer = () => {
           </Grid>
         </Grid>
       </div>
+      <div className="end-footer-container">
+        <Grid container>
+        <Grid item xs={6} sm={6} md={6}>
+          <p className="endfooter-txt">
+            &copy; Maven Analytics, LLC | All Rights Reserved
+          </p>
+        </Grid>
+        <Grid item xs={6} sm={6} md={6}>
+          <p className="endfooter-links">
 
+            <span className="endfooter-link"> Terms&Conditions</span>
+            <span className="endfooter-link">Privacy</span>
+            <span className="endfooter-link">Communuity Forum Policy</span>
+            <span className="endfooter-link">Contact</span>
+          </p>
+        </Grid>
+        </Grid>
+      </div>
     </>
   )
 }

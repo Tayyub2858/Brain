@@ -9,7 +9,7 @@ const DataAnalysic = () =>{
 
             <div className="dataanalysic-container">
                 <Grid container>
-                    <Grid xs={8}>
+                    <Grid xs={12} sm={12} md={6}>
                         <div className="Data-container">
                             <p className="Data-para-1">LEARN,CREATE,CONNECT</p>
                             <h1 className="Data-heading-1">The Data Analytics</h1>
@@ -24,7 +24,7 @@ const DataAnalysic = () =>{
                             <p className="Data-para-3">No credit card required, start learning for free.</p>
                         </div>
                     </Grid>
-                    <Grid xs={4}>
+                    <Grid xs={12} sm={12} md={6}>
                         <div className="video-container">
                             <img src={video} alt=""  className="video-img"/>
                         </div>
