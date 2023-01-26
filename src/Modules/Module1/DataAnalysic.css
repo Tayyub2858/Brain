@@ -19,8 +19,7 @@
     background-color: var(--backgroundColor);
     margin: 0%;
     padding: 0%;
-    margin-top: -10px;
-    position: fixed;
+    /* margin-top: -10px; */
 }
 
 .Data-container {
@@ -117,4 +116,5 @@
 .video-img{
     width: 85vh;
     height: 60vh;
+    margin-top: 15%;
 }
