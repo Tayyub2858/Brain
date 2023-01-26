@@ -98,3 +98,24 @@
     color: var(--yellow);
     cursor: pointer;
 }
+@media only screen and (max-device-width: 768px){
+  .footer-container{
+    padding: 2%;
+  }
+  .footer-objects{
+    margin: 0%;
+  }
+  .end-footer-container{
+    padding: 0%;
+  }
+  .endfooter-txt{
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+  .endfooter-link{
+    margin: 2%;
+    margin-left: 5%;
+    font-size: x-small;
+  }
+}

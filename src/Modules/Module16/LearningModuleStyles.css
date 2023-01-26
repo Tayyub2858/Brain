@@ -64,3 +64,48 @@
   cursor: pointer;
   background: var(--leftgradient);
 }
+@media only screen and (max-device-width: 768px) {
+  .left-module {
+    padding: 5%;
+  }
+  .left-module-heading {
+    text-align: center;
+    font-size: medium;
+  }
+  .left-module-txt {
+    text-align: center;
+    font-size: small;
+  }
+  .learning-btn {
+    padding: 2%;
+    margin-top: 2%;
+    display: flex;
+    margin: auto;
+  }
+  .right-module {
+    padding: 0%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  .training-ind {
+    display: flex;
+    margin: auto;
+  }
+  .right-module-heading {
+    text-align: center;
+    font-size: medium;
+  }
+  .right-module-txt {
+    text-align: center;
+    font-size: small;
+  }
+  .training-team {
+    display: flex;
+    margin: auto;
+  }
+  .demo-btn {
+    padding: 2%;
+    display: flex;
+    margin: auto;
+  }
+}

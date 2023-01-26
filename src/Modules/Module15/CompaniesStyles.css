@@ -11,15 +11,31 @@
     --grey: #4a4a4a;
     --endFooter: #2b2b2b;
   }
+  .companies-container{
+    margin-top: 2%;
+  }
   .left-companies-container{
     padding-left: 50%;
+    width: 80%;
+
   }
   .companies-heading{
     color: var(--endFooter);
   }
-  .left-companies-container{
-    width: 80%;
-  }
   .companies-img{
     width: 35%;
+  }
+  @media only screen and (max-device-width: 768px){
+
+    .left-companies-container{
+      padding: 0%;
+      text-align: center;
+      width: 100%;
+      font-size: medium;
+    }
+    .right-companies-container{
+      display: inline-flex;
+      width: 100%;
+      margin: auto;   
+     }
   }

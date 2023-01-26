@@ -15,17 +15,15 @@
 
 .dataanalysic-container {
     width: 100%;
-    height: 75vh;
-    background-color: var(--backgroundColor);
+    background-color: var(--dark);
     margin: 0%;
     padding: 0%;
+    height: 600px;
     /* margin-top: -10px; */
 }
 
 .Data-container {
-    height: 75vh;
     width: 100%;
-    background-color: var(--dark);
     margin-top: -16px;
 }
 
@@ -107,11 +105,13 @@
     font-style: italic;
 }
 .video-container{
-    background-color: var(--dark);
+    width: 100%;
+    /* height: 500px; */
 }
 .video-img{
-    width: 85vh; 
-    margin-top: 7.3%;
+    width: 10;
+    /* width: 85vh;  */
+    /* margin-top: 7.3%; */
      /* height: 30vh; */
 }
 @media only screen and (max-device-width: 768px){
