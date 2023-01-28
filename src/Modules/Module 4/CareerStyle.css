@@ -1,0 +1,54 @@
+:root {
+    --blue: #20e2d7;
+    --yellow: #f6eea7;
+    --gradient: linear-gradient(to right, #20e2d7 0%, #f6eea7 100%);
+    --leftgradient: linear-gradient(to right, #f6eea7 0%, #20e2d7 100%);
+    --smallText: #A8A8A8;
+    --mediumText: #DFDFDF;
+    --buttonColor: #3D3D3D;
+    --backgroundColor: #F9F9F9;
+    --white: #FFFFFF;
+    --dark: #252525;
+    --grey: #4A4A4A;
+    --endFooter: #2B2B2B;
+}
+.career-container{
+    padding: 5% 0% 5% 0%;
+    background: var(--gradient);
+}.career-box{
+    width: 70%;
+    height: 32vh;
+    background: var(--white);
+    margin: auto;
+    position: relative;
+    border-radius: 30px;
+    display: flex;    
+}
+.career-text{
+    font-size: large;
+    font-weight: bold;
+    color: var(--dark);
+    padding: 5%;
+    padding-top: 10%;
+}
+.caree-img{
+    width: 50%;
+    height: 60%;
+    border-radius: 100%;
+    margin-left: 23%;
+    margin-top: 8%;
+
+}
+.career-img-name{
+    text-align: center;
+    font-size: medium;
+    color: var(--smallText);
+}
+@media only screen and (max-device-width: 768px) {
+  .career-container{
+    height: fit-content;
+  }
+    .career-box{
+        height: fit-content;
+    }
+}

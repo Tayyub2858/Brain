@@ -36,17 +36,18 @@
   cursor: pointer;
   z-index: 1;
   color: var(--white);
+  white-space: nowrap;
 }
 .signup::before {
-    content: "";
-    position: absolute;
-    left: 5px;
-    right: 5px;
-    top: 5px;
-    bottom: 5px;
-    border-radius: 5px;
-    background-color: var(--dark);
-    z-index: -1;
+  content: "";
+  position: absolute;
+  left: 5px;
+  right: 5px;
+  top: 5px;
+  bottom: 5px;
+  border-radius: 5px;
+  background-color: var(--dark);
+  z-index: -1;
 }
 .nav-btn {
   color: var(--white);
@@ -66,7 +67,7 @@
 .nav-hamburguer-icon {
   font-size: 1.2em;
   display: block;
-  color:var(--white);
+  color: var(--white);
 }
 
 .nav-hamburguer-icon:hover {
@@ -79,7 +80,6 @@ nav {
   align-items: center;
   padding: 1em;
 }
-
 
 .nav-links {
   display: none;

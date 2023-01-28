@@ -1,0 +1,84 @@
+:root {
+  --blue: #20e2d7;
+  --yellow: #f6eea7;
+  --gradient: linear-gradient(to right, #20e2d7 0%, #f6eea7 100%);
+  --leftgradient: linear-gradient(to right, #f6eea7 0%, #20e2d7 100%);
+  --smallText: #a8a8a8;
+  --mediumText: #dfdfdf;
+  --buttonColor: #3d3d3d;
+  --backgroundColor: #f9f9f9;
+  --white: #ffffff;
+  --dark: #252525;
+  --grey: #4a4a4a;
+  --endFooter: #2b2b2b;
+}
+.connect-top-container{
+    padding:2% 0% 2% 10% ;
+}
+.connect-top-heading{
+    padding: 1% 30% 0% 0%;
+    font-size: 50px;
+    color: var(--dark);
+}
+
+.connect-top-txt{
+    padding: 1% 35% 0% 0%;
+    color: var(--grey);
+}
+.connect-container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 0.01%;
+  margin-bottom: 0.5%;
+}
+.connect-img-container {
+  padding: 10% 5% 2% 25%;
+}
+.connect-txt-container {
+    padding:20% 5% 2% 15%;
+    
+}
+
+.connect-title {
+  background: var(--gradient);
+  width: fit-content;
+  border-radius: 50px;
+  color: var(--dark);
+  padding: 0.7%;
+  font-weight: 600;
+}
+.connect-heading{
+    padding: 1% 35% 2% 0%;
+    font-size: 50px;
+    color: var(--dark);
+}
+.connect-txt{
+    color: var(--grey);
+    padding: 0% 40% 2% 0%;
+}
+@media only screen and (max-device-width: 768px) {
+  .connect-container, .connect-top-container, .connect-txt-container{
+   padding:5%;
+  }
+  .connect-title{
+    font-size: small;
+  }
+  .connect-top-container{
+    padding: 2%;
+  }
+  .connect-top-heading{
+    font-size: medium;
+  }
+  .connect-heading{
+    font-size: medium;
+  }
+  .connect-txt{
+    font-size: small;
+  }
+
+.connect-top-txt{
+  font-size: small;
+}
+.connect-img{
+  width: 80%;
+}
+}

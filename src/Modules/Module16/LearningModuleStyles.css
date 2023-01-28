@@ -15,10 +15,14 @@
 .left-module {
   background-color: var(--dark);
   padding: 5% 10% 5% 50%;
+  height: 35vh;
+
 }
 .right-module {
   background-color: var(--grey);
   padding: 5% 50% 5% 10%;
+  height: 35vh;
+
 }
 .training-ind {
   margin-left: 80%;
@@ -75,12 +79,14 @@
   .left-module-txt {
     text-align: center;
     font-size: small;
+    padding-bottom: 2%;
+
   }
   .learning-btn {
     padding: 2%;
-    margin-top: 2%;
     display: flex;
     margin: auto;
+    white-space: nowrap;
   }
   .right-module {
     padding: 0%;
@@ -98,6 +104,7 @@
   .right-module-txt {
     text-align: center;
     font-size: small;
+    padding-bottom: 2%;
   }
   .training-team {
     display: flex;
@@ -107,5 +114,6 @@
     padding: 2%;
     display: flex;
     margin: auto;
+    white-space: nowrap;
   }
 }

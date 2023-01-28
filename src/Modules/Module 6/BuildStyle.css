@@ -1,0 +1,65 @@
+:root {
+    --blue: #20e2d7;
+    --yellow: #f6eea7;
+    --gradient: linear-gradient(to right, #20e2d7 0%, #f6eea7 100%);
+    --leftgradient: linear-gradient(to right, #f6eea7 0%, #20e2d7 100%);
+    --smallText: #A8A8A8;
+    --mediumText: #DFDFDF;
+    --buttonColor: #3D3D3D;
+    --backgroundColor: #F9F9F9;
+    --white: #FFFFFF;
+    --dark: #252525;
+    --grey: #4A4A4A;
+    --endFooter: #2B2B2B;
+}
+.build-title{
+    display: block;
+    margin: auto;
+    background: var(--gradient);
+    width: fit-content;
+    padding: 1%;
+    font-weight: 500;
+    border-radius: 50px;
+}
+.build-Learning{
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 3px;
+}
+
+.build-heading{
+    margin-top: 2%;
+    font-size:3rem;
+    font-weight: bold;
+    color: var(--dark);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.build-txt{
+    color: var(--buttonColor);
+    line-height: -5px;
+    font-size: medium;
+    font-weight:450;
+    padding: 1% 24% 1% 24%;
+    color: var(--smallText);
+}
+.build-learning-img{
+    box-shadow: 0px 13px 8px -15px #111;
+}
+.buildskill-img{
+   display: block;
+   margin: auto;
+}
+@media only screen and (max-device-width: 768px) {
+  .build-title{
+    font-size: small;
+  }
+    .build-heading{
+        font-size: medium;
+    }
+    .build-txt{
+        font-size: small;
+    }
+    .buildskill-img{
+        width: 100%;
+    }
+}
