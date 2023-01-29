@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Logo from '../../Assets/Front-Page/logo1.png'
 import './NavStyles.css';
+import { Link } from 'react-router-dom';
 const Nav = () => {
   const [isMenuClosed, setMenuClosed] = useState(true);
   return (
@@ -10,33 +11,33 @@ const Nav = () => {
                   <img src={Logo} alt="companylogo" className='company-logo' />
                 </div>
                 <div className="nav-links">
-                <button className="nav-btn">LEARN</button>
-                    <button className="nav-btn">RESOURCES</button>
-                    <button className="nav-btn">TEAM TRAINING</button>
-                    <button className="nav-btn">PRICING</button>
-                    <button className="nav-btn">TESTIMONIALS</button>
+                    <Link to='/Learn'><button className="nav-btn">LEARN</button></Link>   
+                    <Link to='/Resources'><button className="nav-btn">RESOURCES</button></Link> 
+                    <Link to='/TeamTraining'><button className="nav-btn">TEAM TRAINING</button></Link>     
+                    <Link to='/Pricing'><button className="nav-btn">PRICING</button></Link>  
+                    <Link to='/Testimonials'><button className="nav-btn">TESTIMONIALS</button></Link>   
                 </div>
                 
                 <div className="nav-hamburguer-icon" onClick={() => setMenuClosed(!isMenuClosed)}>☰</div>
                 <div className="nav-links">
-                    <button className="nav-btn">CONTACT</button>
-                    <button className="nav-btn">LOGIN</button>
-                    <button className="signup">SIGN UP</button>
+                <Link to='/Contact'><button className="nav-btn">CONTACT</button></Link> 
+                <Link to='/Login'>  <button className="nav-btn">LOGIN</button></Link> 
+                <Link to='/Signup'> <button className="signup">SIGN UP</button></Link> 
                 </div>
             </nav>
             <div className={`overlay-container${isMenuClosed ? "-hidden" : "-show"}`}>
                 <div>
-                    <div className="overlay-buttonClose" onClick={() => setMenuClosed(!isMenuClosed)}><span>&times;</span></div>
+                <div className="overlay-buttonClose" onClick={() => setMenuClosed(!isMenuClosed)}><span>&times;</span></div>
                     <div className="overlay-menu-wrapper">
                         <div className="overlay-menu">
-                        <button className="nav-btn">LEARN</button>
-                    <button className="nav-btn">RESOURCES</button>
-                    <button className="nav-btn">TEAM TRAINING</button>
-                    <button className="nav-btn">PRICING</button>
-                    <button className="nav-btn">TESTIMONIALS</button>
-                    <button className="nav-btn">CONTACT</button>
-                    <button className="nav-btn">LOGIN</button>
-                    <button className="signup">SIGN UP</button>
+                            <Link to='/Learn'>        <button className="nav-btn-mb">LEARN</button></Link>
+                            <Link to='/Resources'>    <button className="nav-btn-mb">RESOURCES</button></Link>
+                            <Link to='/Teamtraining'><button className="nav-btn-mb">TEAM TRAINING</button></Link>
+                            <Link to='/Pricing'>      <button className="nav-btn-mb">PRICING</button></Link>
+                            <Link to='/Testimonials'> <button className="nav-btn-mb">TESTIMONIALS</button></Link>
+                            <Link to='/Contact'>      <button className="nav-btn-mb">CONTACT</button></Link>
+                            <Link to='/Login'>        <button className="nav-btn-mb">LOGIN</button></Link>
+                            <Link to='/Signup'>       <button className="signup-mb">SIGN UP</button></Link>
                         </div>
                     </div>
                 </div>

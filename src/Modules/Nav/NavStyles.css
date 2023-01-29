@@ -123,8 +123,9 @@ nav {
 .overlay-container-show {
   overflow: hidden;
   position: fixed;
-  background-color: black;
-  opacity: 0.9;
+  background: var(--dark);
+  /* background-color: black; */
+  /* opacity: 0.9; */
   top: 0;
   right: 0;
   bottom: 0;
@@ -137,8 +138,9 @@ nav {
 .overlay-container-hidden {
   overflow: hidden;
   position: fixed;
-  background-color: black;
-  opacity: 0.9;
+  background: var(--dark);
+  /* background-color: black; */
+  /* opacity: 0.9; */
   top: 0;
   right: 0;
   bottom: 0;
@@ -169,10 +171,10 @@ nav {
 .overlay-menu {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   flex-wrap: nowrap;
-  margin-bottom: 10em;
+  /* margin-bottom: 10em; */
 }
 
 .overlay-menu a {
@@ -190,4 +192,23 @@ nav {
 
 .overlay-menu-item:not(:last-child) {
   margin-bottom: 0.3em;
+}
+.nav-btn-mb{
+  color: var(--yellow);
+  font-size: 20px;
+  /* font-weight: 100; */
+  border: none;
+  background: none;
+  margin: 1%;
+  white-space: nowrap;
+  text-align: center;
+  margin-top: 50px;
+}
+.signup-mb{
+border-radius: 10px;
+  margin-top: 5px;
+  font-size: 25px;
+	background: var(--gradient);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
