@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Logo from '../../Assets/Front-Page/logo1.png'
+import Logo from '../../Assets/Front-Page/Logo2.png'
 import './NavStyles.css';
 import { Link } from 'react-router-dom';
 const Nav = () => {
@@ -12,10 +12,9 @@ const Nav = () => {
                 </div>
                 <div className="nav-links">
                     <Link to='/Learn'><button className="nav-btn">LEARN</button></Link>   
-                    <Link to='/Resources'><button className="nav-btn">RESOURCES</button></Link> 
-                    <Link to='/TeamTraining'><button className="nav-btn">TEAM TRAINING</button></Link>     
+                    <Link to='/TeamTraining'><button className="nav-btn">CORPORATE TRAINING</button></Link>     
                     <Link to='/Pricing'><button className="nav-btn">PRICING</button></Link>  
-                    <Link to='/Testimonials'><button className="nav-btn">TESTIMONIALS</button></Link>   
+                    <Link to='/Testimonials'><button className="nav-btn">GALLERY</button></Link>   
                 </div>
                 
                 <div className="nav-hamburguer-icon" onClick={() => setMenuClosed(!isMenuClosed)}>☰</div>
@@ -31,10 +30,10 @@ const Nav = () => {
                     <div className="overlay-menu-wrapper">
                         <div className="overlay-menu">
                             <Link to='/Learn'>        <button className="nav-btn-mb">LEARN</button></Link>
-                            <Link to='/Resources'>    <button className="nav-btn-mb">RESOURCES</button></Link>
-                            <Link to='/Teamtraining'><button className="nav-btn-mb">TEAM TRAINING</button></Link>
+
+                            <Link to='/Teamtraining'><button className="nav-btn-mb">CORPORATE TRAINING</button></Link>
                             <Link to='/Pricing'>      <button className="nav-btn-mb">PRICING</button></Link>
-                            <Link to='/Testimonials'> <button className="nav-btn-mb">TESTIMONIALS</button></Link>
+                            <Link to='/Testimonials'> <button className="nav-btn-mb">GALLERY</button></Link>
                             <Link to='/Contact'>      <button className="nav-btn-mb">CONTACT</button></Link>
                             <Link to='/Login'>        <button className="nav-btn-mb">LOGIN</button></Link>
                             <Link to='/Signup'>       <button className="signup-mb">SIGN UP</button></Link>

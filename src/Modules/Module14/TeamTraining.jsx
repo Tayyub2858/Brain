@@ -7,17 +7,17 @@ const TeamTraining = () => {
         <>
             <div className="team-training-container">
                 <p className="title-txt">
-                    Team Training
+                    Corporate Training
                 </p>
                 <h1 className="training-heading">
                     The Fastest, Most Effective Way to Upskill Your Team
                 </h1>
                 <p className="training-txt">
-                    Maven's team training platform is built for teams who demand a modern and flexible approach to online learning.
+                    Brain's corporate training platform is built for teams who demand a modern and flexible approach to online learning.
                     Assess and benchmark your team's skills, create personalized learning paths, and track real-time progress to keep your team enagaged and accountable.
                 </p>
                 <img src={teamTraining} alt="team-training" className='training-img' />
-                <button className="training-btn">Learn more about team training</button>
+                <button className="training-btn">Learn more about corporate training</button>
             </div>
         </>
     )

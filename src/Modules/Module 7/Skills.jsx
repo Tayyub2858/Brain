@@ -14,8 +14,8 @@ const Skills = () => {
                         <div className="skills-container-asse">
                             <p className="skills-title">Learn</p>
                             <h1 className="skills-heading">Focus on the skills you need most</h1>
-                            <p className="skills-txt">Assess your skills with popular tools like Excel,
-                                SQL, Power BI, Tableau and Python to identify
+                            <p className="skills-txt">Assess your skills with popular skills like Excel,
+                                SQL, Power BI, Python, React / React-Native, NodeJS , Adobe to identify
                                 gaps and customize your learning plan
                             </p>
                         </div>

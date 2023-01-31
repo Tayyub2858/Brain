@@ -13,11 +13,11 @@ const Showcase = () => {
                 <div className="showcase-txt-container">
                     <p className="showcase-title">Create</p>
                     <h1 className="showcase-heading">
-                        Showcase your work. Connect with analysts. Get discovered.
+                        Showcase your work. Connect with Professionals. Get discovered.
                     </h1>
                     <p className="showcase-txt">
-                    When it comes to landing your data dream job, skills alone won't cut it. 
-                    That's why we built a platform where you can showcase your work, share projects with peers and employers, and connect with top analysts around the world.
+                    When it comes to landing your dream job, skills alone won't cut it. 
+                    That's why we built a platform where you can showcase your work, share projects with peers and employers, and connect with top professionals around the world.
                     </p>
                 </div>
                 <div className="btn-container">

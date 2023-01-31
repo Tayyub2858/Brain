@@ -1,8 +1,7 @@
 import React from 'react'
 import './FooterStyles.css';
 import { Grid } from '@material-ui/core';
-import Logo from '../../Assets/Front-Page/logo1.png';
-import img1 from '../../Assets/Front-Page/CPE-QAS-Logo-white.png'
+import Logo from '../../Assets/Front-Page/Logo1.png';
 
 
 const Footer = () => {
@@ -32,19 +31,11 @@ const Footer = () => {
                 LEARN
               </h3>
               <p className="footer-links">
-                Self-Paced Courses
-
+                Courses
               </p>
               <p className="footer-links">
-                Learning Paths
+                Blog
               </p>
-              <p className="footer-links">
-                Maven Bootcamp
-              </p>
-              <p className="footer-links">
-                Credentials & Badges
-              </p>
-              <img src={img1} alt="" className="object-img" />
             </div>
           </Grid>
           <Grid item xs={6} sm={6} md={2}>
@@ -52,20 +43,9 @@ const Footer = () => {
               <h3 className="footer-heading">
                 RESOURCES
               </h3>
+            
               <p className="footer-links">
-                Maven Blog
-              </p>
-              <p className="footer-links">
-                Maven Showcase
-              </p>
-              <p className="footer-links">
-                Why BI?
-              </p>
-              <p className="footer-links">
-                Find Your Path
-              </p>
-              <p className="footer-links">
-                Data Playground
+                Gallery
               </p>
               <p className="footer-links">
                 Help Center
@@ -81,7 +61,7 @@ const Footer = () => {
                 SERVICES
               </h3>
               <p className="footer-links">
-                Team Training
+                Corporate Training
 
               </p>
               <p className="footer-links">
@@ -107,20 +87,19 @@ const Footer = () => {
       </div>
       <div className="end-footer-container">
         <Grid container>
-        <Grid item xs={12} sm={12} md={6}>
-          <p className="endfooter-txt">
-            &copy; Maven Analytics, LLC | All Rights Reserved
-          </p>
-        </Grid>
-        <Grid item xs={12} sm={12} md={6}>
-          <p className="endfooter-links">
+          <Grid item xs={12} sm={12} md={6}>
+            <p className="endfooter-txt">
+              &copy; Brain Analytics, LLC | All Rights Reserved
+            </p>
+          </Grid>
+          <Grid item xs={12} sm={12} md={6}>
+            <p className="endfooter-links">
 
-            <span className="endfooter-link"> Terms&Conditions</span>
-            <span className="endfooter-link">Privacy</span>
-            <span className="endfooter-link">Communuity Forum Policy</span>
-            <span className="endfooter-link">Contact</span>
-          </p>
-        </Grid>
+              <span className="endfooter-link">Terms&Conditions</span>
+              <span className="endfooter-link">Privacy</span>
+              <span className="endfooter-link">Contact</span>
+            </p>
+          </Grid>
         </Grid>
       </div>
     </>

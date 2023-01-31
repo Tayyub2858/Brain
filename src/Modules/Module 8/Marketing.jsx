@@ -12,8 +12,8 @@ const Marketing = () =>{
                   <Grid item xs={12} sm={12} md={9}>
                     <p className="marketing-text">
                     “I was looking to transition my career from marketing to data analytics,
-                    but had no clue where to start. Maven Analytics broke down the thought 
-                    process and course roadmap needed to launch my data career.”
+                    but had no clue where to start. Brain Analytics broke down the thought 
+                    process and course roadmap needed to launch my career.”
                         </p>
                    </Grid>
                    <Grid item xs={12} sm={12} md={3}>

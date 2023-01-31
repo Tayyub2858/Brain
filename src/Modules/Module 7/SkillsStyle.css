@@ -1,8 +1,12 @@
 :root {
-    --blue: #20e2d7;
+    --blue: #3F3F95;
+    --yellow: #FACA28;
+    --gradient: linear-gradient(to right, #3F3F95 0%, #FACA28 100%);
+    --leftgradient: linear-gradient(to right, #FACA28 0%, #3F3F95 100%);
+    /* --blue: #20e2d7;
     --yellow: #f6eea7;
     --gradient: linear-gradient(to right, #20e2d7 0%, #f6eea7 100%);
-    --leftgradient: linear-gradient(to right, #f6eea7 0%, #20e2d7 100%);
+    --leftgradient: linear-gradient(to right, #f6eea7 0%, #20e2d7 100%); */
     --smallText: #A8A8A8;
     --mediumText: #DFDFDF;
     --buttonColor: #3D3D3D;

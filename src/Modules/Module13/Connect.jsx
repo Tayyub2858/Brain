@@ -18,7 +18,7 @@ const Connect = () => {
                                 Learn from world-class instructors
                             </h1>
                             <p className="connect-top-txt">
-                                Connect with our team of certified experts and award-winning instructors, here to help you build the exact skills you need to launch your data career.
+                                Connect with our team of certified experts and award-winning instructors, here to help you build the exact skills you need to launch your career.
                             </p>
                         </div>
                     </Grid>
