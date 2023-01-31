@@ -4,11 +4,9 @@ import Learnimg from '../../Assets/Front-Page/Learn.png';
 import Createimg from '../../Assets/Front-Page/Create.png';
 import Connectimg from '../../Assets/Front-Page/Connect.png'
 import { Grid } from "@material-ui/core";
-import { useNavigate } from "react-router-dom";
 
 
 const DreamJob = () =>{
-    const Navigate = useNavigate();
     return(
         <>
            <div className="dreem-container">
@@ -31,7 +29,7 @@ const DreamJob = () =>{
                                 <p className="job-card-txt">Apply your skills to real projects. and <br />
                                     create a portfolio to showcase your <br />
                                     work to peers and employers</p>
-                                <button className="job-btn" onClick={()=>Navigate('/career',{replace:false})}>Learn More</button>
+                                <button className="job-btn">Learn More</button>
                             </div>
                         </Grid>
                         <Grid item xs={12} sm={12}  md={4}>
