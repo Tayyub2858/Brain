@@ -1,7 +1,6 @@
 import React from "react";
 import './DataAnalysic.css'
 import { Grid } from "@material-ui/core";
-import video from '../../Assets/Front-Page/video.png';
 import Brain from '../../Assets/Front-Page/B.gif';
 
 const DataAnalysic = () => {
