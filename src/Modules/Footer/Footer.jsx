@@ -1,7 +1,7 @@
 import React from 'react'
 import './FooterStyles.css';
 import { Grid } from '@material-ui/core';
-import Logo from '../../Assets/Front-Page/Logo1.png';
+import Logo from '../../Assets/Front-Page/footerLogo.png';
 
 
 const Footer = () => {
