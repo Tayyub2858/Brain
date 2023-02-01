@@ -17,24 +17,26 @@
   --endFooter: #2b2b2b;
 }
 .software-container {
-  display:inline-flex;
-  margin: auto;
-  padding: 0%;
-  width: 100%;
-  height: 120px;
+  padding:2% 5% 0% 5%;
+  height: fit-content;
   background-color: var(--backgroundColor);
   box-shadow: 0px 13px 8px -15px #111;
 }
-.software-image{
-  margin-top: 5%;
+.software-img{
   display: inline-block;
+  margin: auto;
+  width: 25%;
+}
+.software-slide-container{
+  display: flex;
   margin: auto;
 }
 @media only screen and (max-device-width: 768px){
   .software-container{
-    margin-top: 50%;
+    margin-top: 40%;
   }
-  .software-image{
-   width: 60%;
+  .software-img{
+    margin-top: 10%;
+   width: 25%;
   }
 }

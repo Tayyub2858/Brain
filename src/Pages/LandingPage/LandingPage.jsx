@@ -11,7 +11,6 @@ import Showcase from '../../Modules/Module11/Showcase';
 import Career from '../../Modules/Module 4/Career';
 import Build from '../../Modules/Module 6/Build';
 import Skills from '../../Modules/Module 7/Skills';
-import Marketing from '../../Modules/Module 8/Marketing';
 const LandingPage = () => {
     return (
         <>
@@ -23,7 +22,6 @@ const LandingPage = () => {
             <Showcase />
             <Build />
             <Skills />
-            <Marketing />
             <Connect />
             <TeamTraining />
             <Companies />

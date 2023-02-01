@@ -1,12 +1,8 @@
 :root {
-  --blue: #3f3f95;
+  --blue: #25257c;
   --yellow: #faca28;
   --gradient: linear-gradient(to right, #3f3f95 0%, #faca28 100%);
-  --leftgradient: linear-gradient(to right, #faca28 0%, #3f3f95 100%);
-  /* --blue: #20e2d7;
-    --yellow: #f6eea7;
-    --gradient: linear-gradient(to right, #20e2d7 0%, #f6eea7 100%);
-    --leftgradient: linear-gradient(to right, #f6eea7 0%, #20e2d7 100%); */
+  --leftgradient: linear-gradient(to right, #faca28 0%, #25257c 100%);
   --smallText: #a8a8a8;
   --mediumText: #dfdfdf;
   --buttonColor: #3d3d3d;
@@ -50,7 +46,7 @@
 
 .Data-heading-2 {
   width: fit-content;
-  background: var(--gradient);
+  background: var(--leftgradient);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-left: 140px;
@@ -75,14 +71,14 @@
   font-weight: bold;
   padding: 15px;
   border-radius: 20px;
-  background: var(--gradient);
+  background: var(--leftgradient);
   font-size: 15px;
-  color: var(--buttonColor);
+  color: var(--endFooter);
   border: none;
 }
 
 .Data-btn-1:hover {
-  background: var(--leftgradient);
+  background: var(--gradient);
   cursor: pointer;
 }
 
@@ -121,7 +117,7 @@
 }
 @media only screen and (max-device-width: 768px) {
   .video-img {
-    height: 450px;
+    height: 350px;
     margin: 0%;
     width: 100%;
     background-color: var(--white);

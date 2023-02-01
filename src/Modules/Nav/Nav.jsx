@@ -11,6 +11,7 @@ const Nav = () => {
              <Link to='/'> <img src={Logo} alt="companylogo" className='company-logo' /></Link>    
                 </div>
                 <div className="nav-links">
+                    <Link to='/'><button className="nav-btn">HOME</button></Link>   
                     <Link to='/Learn'><button className="nav-btn">LEARN</button></Link>   
                     <Link to='/TeamTraining'><button className="nav-btn">CORPORATE TRAINING</button></Link>     
                     <Link to='/Pricing'><button className="nav-btn">PRICING</button></Link>  
@@ -29,8 +30,8 @@ const Nav = () => {
                 <div className="overlay-buttonClose" onClick={() => setMenuClosed(!isMenuClosed)}><span>&times;</span></div>
                     <div className="overlay-menu-wrapper">
                         <div className="overlay-menu">
+                            <Link to='/'><button className="nav-btn">HOME</button></Link>   
                             <Link to='/Learn'>        <button className="nav-btn-mb">LEARN</button></Link>
-
                             <Link to='/Teamtraining'><button className="nav-btn-mb">CORPORATE TRAINING</button></Link>
                             <Link to='/Pricing'>      <button className="nav-btn-mb">PRICING</button></Link>
                             <Link to='/Testimonials'> <button className="nav-btn-mb">GALLERY</button></Link>

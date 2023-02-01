@@ -1,8 +1,8 @@
 :root {
-  --blue: #3F3F95;
+  --blue: #25257c;
   --yellow: #FACA28;
-  --gradient: linear-gradient(to right, #3F3F95 0%, #FACA28 100%);
-  --leftgradient: linear-gradient(to right, #FACA28 0%, #3F3F95 100%);
+  --gradient: linear-gradient(to right, #25257c 0%, #FACA28 100%);
+  --leftgradient: linear-gradient(to right, #FACA28 0%, #25257c 100%);
   /* --blue: #20e2d7;
   --yellow: #f6eea7;
   --gradient: linear-gradient(to right, #20e2d7 0%, #f6eea7 100%); */
@@ -30,7 +30,7 @@
     padding: 1% 30% 1% 30%;
 }
 .showcase-title {
-  background: var(--gradient);
+  background: var(--leftgradient);
   width: fit-content;
   padding: 0.5% 2% 0.5% 2%;
   font-weight: 500;

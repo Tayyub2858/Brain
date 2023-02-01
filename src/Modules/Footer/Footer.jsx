@@ -2,6 +2,8 @@ import React from 'react'
 import './FooterStyles.css';
 import { Grid } from '@material-ui/core';
 import Logo from '../../Assets/Front-Page/footerLogo.png';
+import { AiFillFacebook, AiFillLinkedin, AiFillInstagram, AiFillTwitterSquare } from 'react-icons/ai';
+import { Link } from 'react-router-dom'
 
 
 const Footer = () => {
@@ -43,7 +45,7 @@ const Footer = () => {
               <h3 className="footer-heading">
                 RESOURCES
               </h3>
-            
+
               <p className="footer-links">
                 Gallery
               </p>
@@ -81,7 +83,53 @@ const Footer = () => {
               <p className="footer-links">
                 Contact
               </p>
+              <p className="footer-links">
+                Join Us on Social Media
+              </p>
+              <span>
+                <svg width="0" height="0">
+                  <linearGradient id="blue-gradient" x1="100%" y1="100%" x2="0%" y2="0%">
+                    <stop stopColor="#25257c" offset="0%" />
+                    <stop stopColor="#FACA28" offset="100%" />
+                  </linearGradient>
+                </svg>
+                <Link
+                  to="https://www.facebook.com/BrainAnalytics.pk"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <AiFillFacebook
+                    style={{ fill: "url(#blue-gradient)" }}
+                    className='social-media-links' />
+                </Link>
+                <Link
+                  to="https://www.facebook.com/BrainAnalytics.pk"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <AiFillInstagram
+                    style={{ fill: "url(#blue-gradient)" }}
+                    className='social-media-links' />
+                </Link>
+                <Link
+                  to="https://www.linkedin.com/company/brainanalytics/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <AiFillLinkedin
+                    style={{ fill: "url(#blue-gradient)" }}
+                    className='social-media-links' />
+                </Link>
+                <Link
+                  to="https://www.facebook.com/BrainAnalytics.pk"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <AiFillTwitterSquare
+                    style={{ fill: "url(#blue-gradient)" }}
+                    className='social-media-links' />
+                </Link>
+              </span>
             </div>
+          </Grid>
+          <Grid container justifyContent='center'>
+
           </Grid>
         </Grid>
       </div>
