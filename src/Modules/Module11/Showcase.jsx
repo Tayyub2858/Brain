@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import './ShowcaseStyles.css';
 import Projects from '../../Assets/Front-Page/Projects.png';
 import Portfolio from '../../Assets/Front-Page/Portfolio.png';
 import Connect from '../../Assets/Front-Page/Connect-with-professionals.png';
 import { Grid } from '@material-ui/core';
-
 const Showcase = () => {
     const [toggle, setToggle] = useState(Projects);
     return (

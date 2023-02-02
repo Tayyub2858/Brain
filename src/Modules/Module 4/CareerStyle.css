@@ -14,7 +14,7 @@
 }
 .career-container{
     padding: 5% 0% 5% 0%;
-    background: var(--leftgradient);
+    background: var(--gradient);
 }.career-box{
     width: 70%;
     height: 32vh;

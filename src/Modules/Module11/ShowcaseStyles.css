@@ -3,9 +3,6 @@
   --yellow: #FACA28;
   --gradient: linear-gradient(to right, #25257c 0%, #FACA28 100%);
   --leftgradient: linear-gradient(to right, #FACA28 0%, #25257c 100%);
-  /* --blue: #20e2d7;
-  --yellow: #f6eea7;
-  --gradient: linear-gradient(to right, #20e2d7 0%, #f6eea7 100%); */
   --smallText: #a8a8a8;
   --mediumText: #dfdfdf;
   --buttonColor: #3d3d3d;
@@ -30,7 +27,7 @@
     padding: 1% 30% 1% 30%;
 }
 .showcase-title {
-  background: var(--leftgradient);
+  background: var(--gradient);
   width: fit-content;
   padding: 0.5% 2% 0.5% 2%;
   font-weight: 500;

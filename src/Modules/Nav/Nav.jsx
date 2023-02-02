@@ -11,18 +11,18 @@ const Nav = () => {
              <Link to='/'> <img src={Logo} alt="companylogo" className='company-logo' /></Link>    
                 </div>
                 <div className="nav-links">
-                    <Link to='/'><button className="nav-btn">HOME</button></Link>   
-                    <Link to='/Learn'><button className="nav-btn">LEARN</button></Link>   
-                    <Link to='/TeamTraining'><button className="nav-btn">CORPORATE TRAINING</button></Link>     
-                    <Link to='/Pricing'><button className="nav-btn">PRICING</button></Link>  
-                    <Link to='/Testimonials'><button className="nav-btn">GALLERY</button></Link>   
+                    <Link to='/'><span className="nav-btn">HOME</span> </Link>   
+                    <Link to='/Learn'><span className="nav-btn">LEARN</span> </Link>   
+                    <Link to='/TeamTraining'><span className="nav-btn"> CORPORATE TRAINING</span> </Link>     
+                    <Link to='/Pricing'><span className="nav-btn">PRICING</span> </Link>  
+                    <Link to='/Testimonials'><span  className="nav-btn">GALLERY</span> </Link>   
                 </div>
                 
                 <div className="nav-hamburguer-icon" onClick={() => setMenuClosed(!isMenuClosed)}>☰</div>
                 <div className="nav-links">
-                <Link to='/Contact'><button className="nav-btn">CONTACT</button></Link> 
-                <Link to='/Login'>  <button className="nav-btn">LOGIN</button></Link> 
-                <Link to='/Signup'> <button className="signup">SIGN UP</button></Link> 
+                <Link className='nav-btn-contact' to='/contact'> <span className="nav-btn">CONTACT</span> </Link> 
+                <Link className='nav-btn-contact' to='/Login'> <span className="nav-btn">LOGIN</span> </Link> 
+                <Link  to='/Signup'> <button className="signup">SIGN UP</button> </Link> 
                 </div>
             </nav>
             <div className={`overlay-container${isMenuClosed ? "-hidden" : "-show"}`}>
@@ -30,12 +30,12 @@ const Nav = () => {
                 <div className="overlay-buttonClose" onClick={() => setMenuClosed(!isMenuClosed)}><span>&times;</span></div>
                     <div className="overlay-menu-wrapper">
                         <div className="overlay-menu">
-                            <Link to='/'><button className="nav-btn">HOME</button></Link>   
+                            <Link to='/'><button className="nav-btn-mb">HOME</button></Link>   
                             <Link to='/Learn'>        <button className="nav-btn-mb">LEARN</button></Link>
                             <Link to='/Teamtraining'><button className="nav-btn-mb">CORPORATE TRAINING</button></Link>
                             <Link to='/Pricing'>      <button className="nav-btn-mb">PRICING</button></Link>
                             <Link to='/Testimonials'> <button className="nav-btn-mb">GALLERY</button></Link>
-                            <Link to='/Contact'>      <button className="nav-btn-mb">CONTACT</button></Link>
+                            <Link to='/contact'>      <button className="nav-btn-mb">CONTACT</button></Link>
                             <Link to='/Login'>        <button className="nav-btn-mb">LOGIN</button></Link>
                             <Link to='/Signup'>       <button className="signup-mb">SIGN UP</button></Link>
                         </div>
