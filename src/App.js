@@ -3,6 +3,7 @@ import LandingPage from './Pages/LandingPage/LandingPage';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Pricing from './Pages/Pricing/Pricing';
 import Contact from './Pages/Contact/Contact';
+import Courses from './Pages/Learn/Courses';
 
 
 function App() {
@@ -13,6 +14,8 @@ function App() {
           <Route path='/' exact element={<LandingPage />} />
           <Route path='/pricing' exact element={<Pricing />} />
           <Route path='/contact' exact element={<Contact />} />
+          <Route path='/learn' exact element={<Courses />} />
+
         </Routes>
       </BrowserRouter>
     </>
