@@ -44,8 +44,10 @@
 }
 .course-card {
   margin: 2%;
-  padding: 1%;
+  padding: 2%;
   height: fit-content;
+  display: flex;
+  flex-direction: column;
 }
 .course-duration{
     margin-top: 5%;
