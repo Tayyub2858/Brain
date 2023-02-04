@@ -11,15 +11,20 @@ const CourseCard = () => {
         <Grid container>
           {Data.map((course, i) => (
             <Grid key={i} item xs={12} sm={12} md={4}>
-              <Card className="course-card">
+              <Card key={i} className="course-card">
                 <img
+                  key={i}
                   src={course.img}
                   alt="course-img"
                   className="course-card-img"
                 />
-                <h1 className="course-card-title">{course.title}</h1>
-                <p className="course-desc">{course.dec}</p>
-                <CourseDetails />
+                <h1 key={i} className="course-card-title">
+                  {course.title}
+                </h1>
+                <p key={i} className="course-desc">
+                  {course.dec}
+                </p>
+                <CourseDetails key={i} />
               </Card>
             </Grid>
           ))}
