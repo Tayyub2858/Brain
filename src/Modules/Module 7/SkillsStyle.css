@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --blue: #25257c;
     --yellow: #FACA28;
     --gradient: linear-gradient(to right, #25257c 0%, #FACA28 100%);
@@ -11,7 +11,7 @@
     --dark: #252525;
     --grey: #4A4A4A;
     --endFooter: #2B2B2B;
-}
+} */
 .skills-title{
     background: var(--gradient);
     width: fit-content;

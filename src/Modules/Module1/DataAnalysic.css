@@ -1,8 +1,8 @@
-:root {
-  --blue: #25257c;
+/* :root {
+  --blue: #66b9f0;
   --yellow: #faca28;
-  --gradient: linear-gradient(to right, #3f3f95 0%, #faca28 100%);
-  --leftgradient: linear-gradient(to right, #faca28 0%, #25257c 100%);
+  --gradient: linear-gradient(to right, #66b9f0 0%, #faca28 100%);
+  --leftgradient: linear-gradient(to right, #faca28 0%, #66b9f0 100%);
   --smallText: #a8a8a8;
   --mediumText: #dfdfdf;
   --buttonColor: #3d3d3d;
@@ -11,7 +11,7 @@
   --dark: #252525;
   --grey: #4a4a4a;
   --endFooter: #2b2b2b;
-}
+} */
 *{
   font-family: Roboto;
   
@@ -35,6 +35,7 @@
 
 .Data-para-1 {
   color: var(--smallText);
+  margin-bottom: 1%;
   margin-left: 140px;
   padding-top: 80px;
   font-family: Arial, Helvetica, sans-serif;
@@ -45,7 +46,7 @@
 .Data-heading-1 {
   color: var(--white);
   margin-left: 140px;
-  font-size: 50px;
+  font-size: 35px;
   margin-top: 0%;
   margin-bottom: 0%;
 }
@@ -58,13 +59,14 @@
   margin-left: 140px;
   font-size: 40px;
   margin-top: 0%;
-  margin-bottom: 0%;
+  margin-bottom: 1%;
 }
 
 .Data-para-2 {
   color: var(--white);
   margin-left: 140px;
   padding: 0% 35% 0% 0%;
+  margin-bottom: 2%;
 }
 
 .Data-btn {
@@ -76,9 +78,9 @@
 .Data-btn-1 {
   background: none;
   font-weight: bold;
-  padding: 15px;
-  border-radius: 20px;
-  background: var(--leftgradient);
+  padding: 10px;
+  border-radius: 10px;
+  background: var(--gradient);
   font-size: 15px;
   color: var(--endFooter);
   border: none;
@@ -92,8 +94,8 @@
 .Data-btn-2 {
   margin-left: 30px;
   background: none;
-  padding: 15px 30px 15px 30px;
-  border-radius: 20px;
+  padding: 10px;
+  border-radius: 10px;
   border: 1px solid white;
   font-weight: bold;
   font-size: 15px;
@@ -151,7 +153,7 @@
     font-size: x-large;
   }
   .Data-heading-2 {
-    margin: 0%;
+    /* display: block; */
     text-align: center;
     font-size: larger;
   }
