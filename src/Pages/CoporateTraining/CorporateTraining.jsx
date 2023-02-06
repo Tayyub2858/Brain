@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid } from '@material-ui/core';
 import Nav from '../../Modules/Nav/Nav';
 import Footer from '../../Modules/Footer/Footer';
-import teamTraining from '../../Assets/Team Traning/TeamTrainingHero.png'
+import teamTraining from '../../Assets/TeamTraning/TeamTrainingHero.png'
 import corporate from '../../Assets/Team Traning/corporate.png'
 import './CorporateTrainingStyles.css'
 
