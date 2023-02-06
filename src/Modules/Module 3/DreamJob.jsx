@@ -36,8 +36,8 @@ const DreamJob = () => {
                 <img src={Createimg} alt="Create Jobs" className="imgjob" />
                 <h1 className="job-card-heading">Create</h1>
                 <p className="job-card-txt">
-                  Apply your skills to real projects. and <br />
-                  create a portfolio to showcase your <br />
+                  Apply your skills to real projects. and 
+                  create a portfolio to showcase your 
                   work to peers and employers
                 </p>
                 <button className="job-btn">Learn More</button>
@@ -48,8 +48,8 @@ const DreamJob = () => {
                 <img src={Learnimg} alt="Learn Jobs" className="imgjob" />
                 <h1 className="job-card-heading">Learn</h1>
                 <p className="job-card-txt">
-                  Build job-ready skills with award- <br />
-                  winning courses and personalized, goal- <br />
+                  Build job-ready skills with award- 
+                  winning courses and personalized, goal- 
                   oriented learning plans
                 </p>
                 <button className="job-btn">Learn More</button>
@@ -60,8 +60,8 @@ const DreamJob = () => {
                 <img src={Connectimg} alt="Connect Jobs" className="imgjob" />
                 <h1 className="job-card-heading">Connect</h1>
                 <p className="job-card-txt">
-                  Join a diverse, global community of data <br />
-                  professionals, and connect with top <br />
+                  Join a diverse, global community of data 
+                  professionals, and connect with top 
                   analysts from around the world
                 </p>
                 <button className="job-btn">Learn More</button>

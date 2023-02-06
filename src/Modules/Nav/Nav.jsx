@@ -13,7 +13,7 @@ const Nav = () => {
                 <div className="nav-links">
                     <Link to='/'><span className="nav-btn">HOME</span> </Link>   
                     <Link to='/learn'><span className="nav-btn">LEARN</span> </Link>   
-                    <Link to='/TeamTraining'><span className="nav-btn"> CORPORATE TRAINING</span> </Link>     
+                    <Link to='/corporate-training'><span className="nav-btn"> CORPORATE TRAINING</span> </Link>     
                     <Link to='/Pricing'><span className="nav-btn">PRICING</span> </Link>  
                     <Link to='/Testimonials'><span  className="nav-btn">GALLERY</span> </Link>
                     <Link className='nav-btn' to='/contact'> <span className="nav-btn">CONTACT</span> </Link> 
@@ -29,9 +29,9 @@ const Nav = () => {
                     <div className="overlay-menu-wrapper">
                         <div className="overlay-menu">
                             <Link to='/'><button className="nav-btn-mb">HOME</button></Link>   
-                            <Link to='/Learn'>        <button className="nav-btn-mb">LEARN</button></Link>
-                            <Link to='/Teamtraining'><button className="nav-btn-mb">CORPORATE TRAINING</button></Link>
-                            <Link to='/Pricing'>      <button className="nav-btn-mb">PRICING</button></Link>
+                            <Link to='/learn'>        <button className="nav-btn-mb">LEARN</button></Link>
+                            <Link to='/corporate-training'><button className="nav-btn-mb">CORPORATE TRAINING</button></Link>
+                            <Link to='/pricing'>      <button className="nav-btn-mb">PRICING</button></Link>
                             <Link to='/Testimonials'> <button className="nav-btn-mb">GALLERY</button></Link>
                             <Link to='/contact'>      <button className="nav-btn-mb">CONTACT</button></Link>
                             <Link to='/Login'>        <button className="nav-btn-mb">LOGIN</button></Link>

@@ -1,10 +1,12 @@
 import React from "react";
 import './software.css'
 import { Grid } from "@material-ui/core";
-import Excel from '../../Assets/Front-Page/Excel.png';
-import PowerBi from '../../Assets/Front-Page/Power-bi.png';
-import Tableau from '../../Assets/Front-Page/Tableau.png';
-import Python from '../../Assets/Front-Page/Python.png'
+import VA from '../../Assets/Front-Page/assistant.png';
+import PowerBi from '../../Assets/Front-Page/data-analysis.png';
+import video from '../../Assets/Front-Page/video-editing.png';
+import graphic from '../../Assets/Front-Page/graphic-design.png';
+import webDev from '../../Assets/Front-Page/web-development.png';
+import mobileApp from '../../Assets/Front-Page/mobile-app.png';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import "swiper/swiper.min.css";
@@ -20,7 +22,7 @@ const Software = () => {
                                 spaceBetween={0}
                                 slidesPerView={5}
                                 autoplay={{
-                                    delay: 1500,
+                                    delay: 2500,
                                     disableOnInteraction: false,
                                     pauseOnMouseEnter: true,
                                 }}
@@ -32,29 +34,35 @@ const Software = () => {
                                 className="mySwiper"
                             >
                                 <SwiperSlide>
-                                    <img src={Excel} alt="companies" className="software-img" />
+                                    <img src={VA} alt="companies" className="software-img" />
+                                    <p className="software-txt">Virtual Assitant</p>
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <img src={PowerBi} alt="companies" className="software-img" />
+                                    <p className="software-txt">Data Analysis</p>
+
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img src={Tableau} alt="companies" className="software-img" />
+                                    <img src={video} alt="companies" className="software-img" />
+                                    <p className="software-txt">Video Editing</p>
+
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img src={Python} alt="companies" className="software-img" />
+                                    <img src={graphic} alt="companies" className="software-img" />
+                                    <p className="software-txt">Graphic Designing</p>
+
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img src={Excel} alt="companies" className="software-img" />
+                                    <img src={webDev} alt="companies" className="software-img" />
+                                    <p className="software-txt">Web App Development</p>
+
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img src={PowerBi} alt="companies" className="software-img" />
+                                    <img src={mobileApp} alt="companies" className="software-img" />
+                                    <p className="software-txt">Mobile App Development</p>
+
                                 </SwiperSlide>
-                                <SwiperSlide>
-                                    <img src={Tableau} alt="companies" className="software-img" />
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <img src={Python} alt="companies" className="software-img" />
-                                </SwiperSlide>
+                               
                             </Swiper>
                         </div>
                     </Grid>

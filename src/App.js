@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Pricing from './Pages/Pricing/Pricing';
 import Contact from './Pages/Contact/Contact';
 import Courses from './Pages/Learn/Courses';
+import CorporateTraining from './Pages/CoporateTraining/CorporateTraining';
 
 
 function App() {
@@ -15,6 +16,8 @@ function App() {
           <Route path='/pricing' exact element={<Pricing />} />
           <Route path='/contact' exact element={<Contact />} />
           <Route path='/learn' exact element={<Courses />} />
+          <Route path='/corporate-training' exact element={<CorporateTraining />} />
+
 
         </Routes>
       </BrowserRouter>

@@ -1,17 +1,4 @@
-/* :root {
-    --blue: #25257c;
-    --yellow: #FACA28;
-    --gradient: linear-gradient(to right, #3F3F95 0%, #FACA28 100%);
-    --leftgradient: linear-gradient(to right, #FACA28 0%, #25257c 100%);
-    --smallText: #A8A8A8;
-    --mediumText: #DFDFDF;
-    --buttonColor: #3D3D3D;
-    --backgroundColor: #F9F9F9;
-    --white: #FFFFFF;
-    --dark: #252525;
-    --grey: #4A4A4A;
-    --endFooter: #2B2B2B;
-} */
+
 .dreem-container{
     width: 100%;
     height: auto;
@@ -74,7 +61,11 @@
     border-radius: 20px;
     cursor: pointer;
 }
-
+.job-card-txt{
+   
+padding: 0% 25% 0% 25%;
+text-align: justify;
+}
 @media only screen and (max-device-width: 768px){
     .maven-job span{
         font-size: x-small;

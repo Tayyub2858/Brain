@@ -4,6 +4,7 @@ import { Grid } from "@material-ui/core";
 import Brain from "../../Assets/Front-Page/B.gif";
 
 const DataAnalysic = () => {
+ 
   return (
     <>
       <div className="dataanalysic-container">

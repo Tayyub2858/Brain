@@ -13,6 +13,7 @@
     --endFooter: #2B2B2B;
 } */
 .career-container{
+    margin-top: 2%;
     padding: 5% 0% 5% 0%;
     background: var(--gradient);
 }.career-box{

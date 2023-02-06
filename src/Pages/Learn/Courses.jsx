@@ -4,9 +4,17 @@ import Nav from '../../Modules/Nav/Nav'
 import './CoursesStyles.css';
 import CourseCard from './CourseCard';
 import { Grid } from '@material-ui/core';
-import CourseImg from '../../Assets/Learn/Self-course/Course-hero_2x.png'
+import CourseImg from '../../Assets/Learn/Self-course/Course-hero_2x.png';
+import Loader from '../../Assets/Front-Page/Loader.gif'
 
 const Courses = () => {
+    const [loader, setloader] = React.useState(true);
+   React.useEffect(() => {
+        setloader(true);
+        setTimeout(() => {
+          setloader(false);
+        }, 4500);
+      }, []);
     return (
         <>
             <Nav />
@@ -31,10 +39,13 @@ const Courses = () => {
                     </Grid>
                 </div>
             </div>
-            <CourseCard />
+            {loader ? <div>
+                <img className='loader' src={Loader} alt="Factching Your data" />
+            </div> : (<CourseCard />)}
+
             <Footer />
         </>
     )
 }
 
-export default Courses
+export default Courses;
