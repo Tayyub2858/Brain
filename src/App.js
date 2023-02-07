@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Pricing from './Pages/Pricing/Pricing';
 import Contact from './Pages/Contact/Contact';
 import Courses from './Pages/Learn/Courses';
-import CorporateTraining from './Pages/CoporateTraining/CorporateTraining';
+import CorporateTraining from './Pages/CoporateTraining/CorporateFE/CorporateTraining';
 
 
 function App() {

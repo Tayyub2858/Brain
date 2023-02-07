@@ -1,7 +1,7 @@
 import React from "react";
 import { Modal } from "@material-ui/core";
 import "./CoursesStyles.css";
-import Data from './CourseData';
+// import Data from './CourseData';
 
 const CourseDetails = () => {
   const [open, setOpen] = React.useState(false);

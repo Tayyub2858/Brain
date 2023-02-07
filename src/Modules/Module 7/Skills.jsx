@@ -22,7 +22,7 @@ const Skills = () => {
                     </Grid>
                     <Grid item xs={12} sm={12} md={7}>
                         <div className="skills-container-img">
-                            <img src={SkillsAsses} altclas="Skills-assesment" className="skills-asse-img" />
+                            <img src={SkillsAsses} alt="Skills-assesment" className="skills-asse-img" />
                         </div>
                     </Grid>
                 </Grid>

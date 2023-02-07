@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import "./ShowcaseStyles.css";
 import Projects from "../../Assets/Front-Page/Projects.png";
 import Portfolio from "../../Assets/Front-Page/Portfolio.png";

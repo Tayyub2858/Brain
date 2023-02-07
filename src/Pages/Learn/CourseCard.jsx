@@ -3,7 +3,6 @@ import "./CoursesStyles.css";
 import { Grid, Card } from "@material-ui/core";
 import Data from "./CourseData";
 import CourseDetails from "./CourseDetails";
-import B from '../../Assets/Front-Page/B.gif';
 const CourseCard = () => {
   return (
     <>
