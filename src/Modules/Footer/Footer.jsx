@@ -21,9 +21,9 @@ const Footer = () => {
           </Grid>
           <Grid item xs={12} sm={12} md={2}>
             <div className="address-container">
-              <h3 className="footer-heading">
+              <h4 className="footer-heading">
                 HEAD OFFICE
-              </h3>
+              </h4>
               <p className="footer-txt">
                 Brain Analytics, Office 18, Khayaban Gardens Sargodah Road, Faisalabad
                 <span className="ph-num">phone: 041-8787246</span>
@@ -32,9 +32,9 @@ const Footer = () => {
           </Grid>
           <Grid item xs={12} sm={12} md={1}>
             <div className="footer-links">
-              <h3 className="footer-heading">
+              <h4 className="footer-heading">
                 LEARN
-              </h3>
+              </h4>
               <p className="footer-link-txt">
                 Courses
               </p>
@@ -45,9 +45,9 @@ const Footer = () => {
           </Grid>
           <Grid item xs={12} sm={12} md={1}>
             <div className="footer-links">
-              <h3 className="footer-heading">
+              <h4 className="footer-heading">
                 RESOURCES
-              </h3>
+              </h4>
               <p className="footer-link-txt">
                 Gallery
               </p>
@@ -61,9 +61,9 @@ const Footer = () => {
           </Grid>
           <Grid item xs={12} sm={12} md={1}>
             <div className="footer-links">
-              <h3 className="footer-heading">
+              <h4 className="footer-heading">
                 SERVICES
-              </h3>
+              </h4>
               <Link to='/corporate-training'>
                 <p className="footer-link-txt">
                   Corporate Training
@@ -75,9 +75,9 @@ const Footer = () => {
           </Grid>
           <Grid item xs={12} sm={12} md={1}>
             <div className="footer-links">
-              <h3 className="footer-heading">
+              <h4 className="footer-heading">
                 CONNECT
-              </h3>
+              </h4>
               <p className="footer-link-txt">
                 Meet The Team
               </p>
@@ -86,11 +86,11 @@ const Footer = () => {
               </p>
             </div>
           </Grid>
-          <Grid item xs={12} sm={12} md={2}>
+          <Grid item xs={12} sm={12} md={3}>
             <div className="newsletter-container">
-              <h3 className="footer-heading">
+              <h4 className="footer-heading">
                 NEWS LETTER
-              </h3>
+              </h4>
               <p className="footer-txt">
                 Subscribe our News Letter for updates
               </p>
@@ -116,4 +116,4 @@ const Footer = () => {
     </>
   )
 }
-export default Footer;
+export default Footer
