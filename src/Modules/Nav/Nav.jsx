@@ -15,9 +15,9 @@ const Nav = () => {
                     <Link to='/learn'><span className="nav-btn">LEARN</span> </Link>   
                     <Link to='/corporate-training'><span className="nav-btn"> CORPORATE TRAINING</span> </Link>     
                     <Link to='/Pricing'><span className="nav-btn">PRICING</span> </Link>  
-                    <Link to='/Testimonials'><span  className="nav-btn">GALLERY</span> </Link>
+                    <Link to='/gallery'><span  className="nav-btn">GALLERY</span> </Link>
                     <Link className='nav-btn' to='/contact'> <span className="nav-btn">CONTACT</span> </Link> 
-                <Link className='nav-btn' to='/Login'> <span className="nav-btn">LOGIN</span> </Link> 
+                <Link className='nav-btn' to='/login'> <span className="nav-btn">LOGIN</span> </Link> 
                 <Link  to='/Signup'> <button className="signup">SIGN UP</button> </Link>  
                 </div>
                 

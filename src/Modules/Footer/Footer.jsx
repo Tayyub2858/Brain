@@ -38,9 +38,10 @@ const Footer = () => {
               <p className="footer-link-txt">
                 Courses
               </p>
-              <p className="footer-link-txt">
-                Blog
-              </p>
+              <Link className='footer-link' to='/blog'>
+                <p className="footer-link-txt">
+                  Blog
+                </p></Link>
             </div>
           </Grid>
           <Grid item xs={3} sm={3} md={1}>
@@ -48,9 +49,10 @@ const Footer = () => {
               <h4 className="footer-heading">
                 RESOURCES
               </h4>
-              <p className="footer-link-txt">
-                Gallery
-              </p>
+              <Link className='footer-link' to='/gallery'>
+                <p className="footer-link-txt">
+                  Gallery
+                </p></Link>
               <p className="footer-link-txt">
                 Help Center
               </p>
@@ -121,12 +123,12 @@ const Footer = () => {
             </p>
           </Grid>
           <Grid item xs={12} sm={12} md={6}>
-          <span className="end-footer-txt">Terms and Conditions</span>
-          <span className="end-footer-txt">Privacy</span>
-          <span className="end-footer-txt">Contact</span>
+            <span className="end-footer-txt">Terms and Conditions</span>
+            <span className="end-footer-txt">Privacy</span>
+            <span className="end-footer-txt">Contact</span>
 
           </Grid>
-          
+
         </Grid>
       </div>
 
