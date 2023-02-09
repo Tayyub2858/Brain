@@ -88,6 +88,9 @@ width: 90%;
   margin-left: 2%;
   font-size: small;
 }
+.footer-link{
+  text-decoration: none;
+}
 @media only screen and (max-device-width: 768px) {
   .footer-logo{
     width: 25%;

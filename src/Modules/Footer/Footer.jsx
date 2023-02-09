@@ -64,7 +64,7 @@ const Footer = () => {
               <h4 className="footer-heading">
                 SERVICES
               </h4>
-              <Link to='/corporate-training'>
+              <Link className='footer-link' to='/corporate-training'>
                 <p className="footer-link-txt">
                   Corporate Training
                 </p></Link>
