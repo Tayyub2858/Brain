@@ -14,12 +14,12 @@ const Footer = () => {
     <>
       <div className="footer-container">
         <Grid container>
-          <Grid item xs={12} sm={12} md={1}>
+          <Grid item xs={6} sm={6} md={1}>
             <div className="footer-logo-container">
               <Link to='/'><img src={Logo} alt="Footer Logo" className='footer-logo' /></Link>
             </div>
           </Grid>
-          <Grid item xs={12} sm={12} md={2}>
+          <Grid item xs={6} sm={6} md={2}>
             <div className="address-container">
               <h4 className="footer-heading">
                 HEAD OFFICE
@@ -30,7 +30,7 @@ const Footer = () => {
               </p>
             </div>
           </Grid>
-          <Grid item xs={12} sm={12} md={1}>
+          <Grid item xs={3} sm={3} md={1}>
             <div className="footer-links">
               <h4 className="footer-heading">
                 LEARN
@@ -43,7 +43,7 @@ const Footer = () => {
               </p>
             </div>
           </Grid>
-          <Grid item xs={12} sm={12} md={1}>
+          <Grid item xs={3} sm={3} md={1}>
             <div className="footer-links">
               <h4 className="footer-heading">
                 RESOURCES
@@ -59,7 +59,7 @@ const Footer = () => {
               </p>
             </div>
           </Grid>
-          <Grid item xs={12} sm={12} md={1}>
+          <Grid item xs={3} sm={3} md={1}>
             <div className="footer-links">
               <h4 className="footer-heading">
                 SERVICES
@@ -73,7 +73,7 @@ const Footer = () => {
               </p>
             </div>
           </Grid>
-          <Grid item xs={12} sm={12} md={1}>
+          <Grid item xs={3} sm={3} md={1}>
             <div className="footer-links">
               <h4 className="footer-heading">
                 CONNECT
@@ -98,21 +98,38 @@ const Footer = () => {
               <button className="sub-btn"> Subscribe</button>
             </div>
           </Grid>
-          <Grid item xs={12} sm={12} md={1}>
+          <Grid item xs={1} sm={1} md={1}>
             <div className="barcode">
               <img src={barcode} alt="barcode" className="barcode-img" />
             </div>
           </Grid>
           <Grid item xs={12} sm={12} md={1}>
             <div className="socialmedia-links">
-            <img src={fb} alt="facebook" className="social-media-img" />
-            <img src={insta} alt="instagram" className="social-media-img" />
-            <img src={li} alt='linked in' className="social-media-img" />
-            <img src={tw} alt="twitter" className="social-media-img" />
+              <img src={fb} alt="facebook" className="social-media-img" />
+              <img src={insta} alt="instagram" className="social-media-img" />
+              <img src={li} alt='linked in' className="social-media-img" />
+              <img src={tw} alt="twitter" className="social-media-img" />
             </div>
           </Grid>
         </Grid>
       </div>
+      <div className="end-footer">
+        <Grid container>
+          <Grid item xs={12} sm={12} md={6}>
+            <p className="end-footer-txt">
+              &copy; Brain Analytics, LLC | All Rights Reserved
+            </p>
+          </Grid>
+          <Grid item xs={12} sm={12} md={6}>
+          <span className="end-footer-txt">Terms and Conditions</span>
+          <span className="end-footer-txt">Privacy</span>
+          <span className="end-footer-txt">Contact</span>
+
+          </Grid>
+          
+        </Grid>
+      </div>
+
     </>
   )
 }
