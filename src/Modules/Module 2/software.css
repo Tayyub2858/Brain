@@ -21,10 +21,13 @@
 }
 @media only screen and (max-device-width: 768px) {
   .software-container {
-    margin-top: 40%;
+    margin-top: 0%;
   }
   .software-img {
     margin-top: 10%;
     width: 25%;
+  }
+  .software-txt{
+    font-size: x-small;
   }
 }

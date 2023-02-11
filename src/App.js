@@ -7,7 +7,7 @@ import Courses from './Pages/Learn/Courses';
 import CorporateTraining from './Pages/CoporateTraining/CorporateFE/CorporateTraining';
 import Gallery from './Pages/Gallery/Gallery';
 import BlogMainPage from './Pages/Blog/BlogMainPage';
-import DrawerDasboard from './Modules/Drawer/DasboardDrawer';
+import LoginPage from './Pages/Dashboard/LoginPage';
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
           <Route path='/corporate-training' exact element={<CorporateTraining />} />
           <Route path='/gallery' exact element={<Gallery />} />
           <Route path='/blog' exact element={<BlogMainPage />} />
-          <Route path='/login' exact element={<DrawerDasboard />} />
+          <Route path='/login' exact element={<LoginPage />} />
 
 
 

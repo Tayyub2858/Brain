@@ -17,9 +17,9 @@ const CourseCard = () => {
                   alt="course-img"
                   className="course-card-img"
                 />
-                <h1 className="course-card-title">
+                <h2 className="course-card-title">
                   {course.title}
-                </h1>
+                </h2>
                 <p className="course-desc">
                   {course.dec}
                 </p>

@@ -1,4 +1,3 @@
-
 .course-title-container {
   background: url(../../Assets//Front-Page/contactPage.png);
   background-repeat: no-repeat;
@@ -26,7 +25,9 @@
 }
 /* course card styles */
 .course-card-img {
-  width: 100%;
+  width: 50%;
+  display: block;
+  margin: auto;
 }
 .course-card {
   margin: 2%;
