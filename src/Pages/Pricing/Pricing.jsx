@@ -2,6 +2,7 @@ import { Grid } from '@material-ui/core'
 import React from 'react'
 import Footer from '../../Modules/Footer/Footer'
 import Nav from '../../Modules/Nav/Nav'
+import { Link } from 'react-router-dom'
 import './PricingStyles.css'
 
 const Pricing = () => {
@@ -68,7 +69,7 @@ const Pricing = () => {
                 <p className="price">
                   <span className="price-txt"> PRICING</span>
                 </p>
-                <button className="signup price-btn">CONTACT US</button>
+                <Link to='/contact'> <button className="signup price-btn">CONTACT US</button></Link>
 
                 <div className="type">
                   <p className="title-type">Members <span className="title-type-txt"> 20+</span></p>

@@ -2,9 +2,10 @@ import React from "react";
 import "./DataAnalysic.css";
 import { Grid } from "@material-ui/core";
 import Brain from "../../Assets/Front-Page/B.gif";
+import { Link } from 'react-router-dom'
 
 const DataAnalysic = () => {
- 
+
   return (
     <>
       <div className="dataanalysic-container">
@@ -20,8 +21,8 @@ const DataAnalysic = () => {
                 and career jumpstart.
               </p>
               <div className="Data-btn">
-                <button className="Data-btn-1">Sign Up For Free</button>
-                <button className="Data-btn-2">Corporate Training</button>
+                <Link to='/signup'><button className="Data-btn-1">Sign Up For Free</button></Link>
+                <Link to='/corporate-training'><button className="Data-btn-2">Corporate Training</button></Link>
               </div>
               <p className="Data-para-3">
                 No credit card required, start learning now.

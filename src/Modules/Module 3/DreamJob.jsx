@@ -40,7 +40,6 @@ const DreamJob = () => {
                   create a portfolio to showcase your 
                   work to peers and employers
                 </p>
-                <button className="job-btn">Learn More</button>
               </div>
             </Grid>
             <Grid item xs={12} sm={12} md={4}>
@@ -52,7 +51,6 @@ const DreamJob = () => {
                   winning courses and personalized, goal- 
                   oriented learning plans
                 </p>
-                <button className="job-btn">Learn More</button>
               </div>
             </Grid>
             <Grid item xs={12} sm={12} md={4}>
@@ -64,7 +62,6 @@ const DreamJob = () => {
                   professionals, and connect with top 
                   analysts from around the world
                 </p>
-                <button className="job-btn">Learn More</button>
               </div>
             </Grid>
           </Grid>

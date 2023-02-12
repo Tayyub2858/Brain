@@ -18,7 +18,7 @@ const Nav = () => {
                     <Link to='/gallery'><span  className="nav-btn">GALLERY</span> </Link>
                     <Link className='nav-btn' to='/contact'> <span className="nav-btn">CONTACT</span> </Link> 
                 <Link className='nav-btn' to='/login'> <span className="nav-btn">LOGIN</span> </Link> 
-                <Link  to='/Signup'> <button className="signup">SIGN UP</button> </Link>  
+                <Link  to='/signup'> <button className="signup">SIGN UP</button> </Link>  
                 </div>
                 
                 <div className="nav-hamburguer-icon" onClick={() => setMenuClosed(!isMenuClosed)}>☰</div>
