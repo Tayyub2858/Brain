@@ -1,14 +1,11 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
 import './CompaniesStyles.css';
-import cat from '../../Assets/Front-Page/Caterpillar.png';
-import coke from '../../Assets/Front-Page/Coca-cola.png';
-import kpmg from '../../Assets/Front-Page/Kpmg.png';
-import mk from '../../Assets/Front-Page/Michael-kors.png';
-import pfizer from '../../Assets/Front-Page/Pfizer.png';
-import quest from '../../Assets/Front-Page/Quest.png';
-import tp from '../../Assets/Front-Page/Tetra-pak.png';
-import mitsubishi from '../../Assets/Front-Page/Mitsubishi.png';
+import cat from '../../Assets/Front-Page/Kinan.png';
+import coke from '../../Assets/Front-Page/PetroRabigh.png';
+import kpmg from '../../Assets/Front-Page/SAL.png';
+import mk from '../../Assets/Front-Page/Sadaqat.png';
+import ZJ from '../../Assets/Front-Page/ZahidJameel.jpg';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import "swiper/swiper.min.css";
@@ -42,9 +39,20 @@ const Companies = () => {
                                 modules={[Autoplay, Pagination, Navigation]}
                                 className="mySwiper"
                             >
+
                                 <SwiperSlide>
 
                                     <img src={cat} alt="companies" className="companies-img" />
+
+                                </SwiperSlide>
+                                <SwiperSlide>
+
+                                    <img src={mk} alt="companies" className="companies-img" />
+
+                                </SwiperSlide>
+                                <SwiperSlide>
+
+                                    <img src={ZJ} alt="companies" className="companies-img" />
 
                                 </SwiperSlide>
                                 <SwiperSlide>
@@ -57,31 +65,7 @@ const Companies = () => {
                                     <img src={kpmg} alt="companies" className="companies-img" />
 
                                 </SwiperSlide>
-                                <SwiperSlide>
 
-                                    <img src={mk} alt="companies" className="companies-img" />
-
-                                </SwiperSlide>
-                                <SwiperSlide>
-
-                                    <img src={pfizer} alt="companies" className="companies-img" />
-
-                                </SwiperSlide>
-                                <SwiperSlide>
-
-                                    <img src={quest} alt="companies" className="companies-img" />
-
-                                </SwiperSlide>
-                                <SwiperSlide>
-
-                                    <img src={tp} alt="companies" className="companies-img" />
-
-                                </SwiperSlide>
-                                <SwiperSlide>
-
-                                    <img src={mitsubishi} alt="companies" className="companies-img" />
-
-                                </SwiperSlide>
                             </Swiper>
                         </div>
                     </Grid>
