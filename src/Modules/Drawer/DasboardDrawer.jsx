@@ -24,58 +24,56 @@ const DrawerDasboard = () => {
     return (
 
         <>
-            <GiHamburgerMenu onClick={handleDrawerOpen}/>
+       <GiHamburgerMenu onClick={handleDrawerOpen}/>
             <Drawer
-                className='drawer'
                 anchor="left"
                 onClose={handleDrawerClose}
-                open={open}>
+                open={open}
+            >
+
+
+
 
                 <div className="Dashboard-container">
                     <div className="dashbord-left-side">
                         <div className="sidebar">
-                            <ul className='sidebar-list'>
-                                <Link to='/'> <img src={Logo} alt="Display Logo" className='sidebar-logo' /> </Link>
-                                <div className="menu-container">
-                                    <li className="sidebar-row">
-                                        <div className='sidebar-icons'><MdDashboard /></div>
-                                        <div className='sidebar-title'>Dashboard</div>
-                                    </li>
-                                    <li className="sidebar-row">
-                                        <div className='sidebar-icons'><MdLocalLibrary /></div>
-                                        <div className='sidebar-title'>My Learning Plan</div>
-                                    </li>
-                                    <li className="sidebar-row">
-                                        <div className='sidebar-icons'><MdOutlineSlowMotionVideo /></div>
-                                        <div className='sidebar-title'>Courses</div>
-                                    </li>
-                                    <li className="sidebar-row">
-                                        <div className='sidebar-icons'><FaClipboardCheck /></div>
-                                        <div className='sidebar-title'>Assesments</div>
-                                    </li>
-                                    <li className="sidebar-row">
-                                        <div className='sidebar-icons'><FaProjectDiagram /></div>
-                                        <div className='sidebar-title'>Portfolio</div>
-                                    </li>
-                                    <li className="sidebar-row">
-                                        <div className='sidebar-icons'><GrStorage /></div>
-                                        <div className='sidebar-title'>Data Playground</div>
-                                    </li>
-                                    <div className="lower-buttons">
-                                        <li className="sidebar-row">
-                                            <div className='sidebar-icons'><BiHelpCircle /></div>
-                                            <div className='sidebar-title'>Help Center</div>
-                                        </li>
-                                        <li className="sidebar-row">
-                                            <div className='sidebar-icons'><FiLogOut /></div>
-                                            <div className='sidebar-title'>Logout</div>
-                                        </li>
-                                    </div>
-                                </div>
-                            </ul>
+                            <div className='sidebar-list'>
+                                <img src={Logo} alt="Display Logo" className='sidebar-logo' />
+                                <Link className="sidebar-row" to='/login' onClick={handleDrawerClose}>
+                                    <li className='sidebar-icons' ><MdDashboard /></li>
+                                    <li className='sidebar-title' >Dashboard </li>
+                                </Link>
+                                <Link className="sidebar-row" to='/learning-path' onClick={handleDrawerClose}>
+                                    <li className='sidebar-icons' ><MdLocalLibrary /></li>
+                                    <li className='sidebar-title' >My Learning Path</li>
+                                </Link>
+                                <Link className="sidebar-row" to='/dashboard-courses' onClick={handleDrawerClose}>
+                                    <li className='sidebar-icons' ><MdOutlineSlowMotionVideo/></li>
+                                    <li className='sidebar-title' >Courses</li>
+                                </Link>
+                                <Link className="sidebar-row" to='/assessments' onClick={handleDrawerClose}>
+                                    <li className='sidebar-icons'><FaClipboardCheck /></li>
+                                    <li className='sidebar-title' >Assessments</li>
+                                </Link>
+                                <Link className="sidebar-row" to='/portfolio' onClick={handleDrawerClose}>
+                                    <li className='sidebar-icons' ><FaProjectDiagram /></li>
+                                    <li className='sidebar-title' >Portfolio</li>
+                                </Link>
+                                <Link className="sidebar-row" to='/dataplayground' onClick={handleDrawerClose}>
+                                    <li className='sidebar-icons' ><GrStorage /></li>
+                                    <li className='sidebar-title' >Data Playground</li>
+                                </Link>
+                                <Link className="sidebar-row" to='/helpcenter' onClick={handleDrawerClose}>
+                                    <li className='sidebar-icons' ><BiHelpCircle /></li>
+                                    <li className='sidebar-title' >Help Center</li>
+                                </Link>
+                                <Link className="sidebar-row" to='/logout' onClick={handleDrawerClose}>
+                                    <li className='sidebar-icons' ><FiLogOut /></li>
+                                    <li className='sidebar-title' >Logout</li>
+                                </Link>
+                            </div>
                         </div>
                     </div>
-                    <div className="dashoard-right-side"></div>
                 </div>
 
             </Drawer>

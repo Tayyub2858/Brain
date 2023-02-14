@@ -5,7 +5,19 @@ import { Grid } from '@material-ui/core';
 import './ContactStyles.css';
 import { AiOutlineMail } from 'react-icons/ai'
 import { FaMapMarkerAlt } from 'react-icons/fa'
+import ContactInput from './ContactInput';
 const Contact = () => {
+    const {
+        fullName,
+        setfullName,
+        emailAddress,
+        setemailAddress,
+        trainingType,
+        settrainingType,
+        message,
+        setmessage,
+        contactHandler
+    } = ContactInput();
     return (
         <>
             <Nav />
@@ -43,16 +55,16 @@ const Contact = () => {
                     <Grid item xs={12} sm={12} md={6}>
                         <div className="contact-form-input">
                             <p className='input-title'>Full Name</p>
-                            <input type='text' className='contact-input'/>
+                            <input onChange={(e) => setfullName(e.target.value)} value={fullName} type='text' className='contact-input' />
                             <p className='input-title'>Email</p>
-                            <input type='text' className='contact-input'/>
+                            <input onChange={(e) => setemailAddress(e.target.value)} value={emailAddress} type='text' className='contact-input' />
                             <p className='input-title'>I'm looking for</p>
-                            <input name='typeoftraining' type='radio' value='IndividualTraining'/> <span className="radio-txt">Individual Training</span>
-                            <input name='typeoftraining' type='radio' value='CorporateTraining' /> <span className="radio-txt">Corporate Training</span>
-                            <input name='typeoftraining' type='radio' value='Other' /> <span className="radio-txt">Other</span>
+                            <input onChange={(e) => settrainingType(e.target.value)} name='typeoftraining' type='radio' value='IndividualTraining' /> <span className="radio-txt">Individual Training</span>
+                            <input onChange={(e) => settrainingType(e.target.value)} name='typeoftraining' type='radio' value='CorporateTraining' /> <span className="radio-txt">Corporate Training</span>
+                            <input onChange={(e) => settrainingType(e.target.value)} name='typeoftraining' type='radio' value='Other' /> <span className="radio-txt">Other</span>
                             <p className='input-title'>Message</p>
-                       <textarea name="message" className='form-msg' cols="55" rows="15"/>
-                       <button className="query-submit">SUBMIT</button>
+                            <textarea onChange={(e)=>setmessage(e.target.value)}  value={message} name="message" className='form-msg' cols="55" rows="15" />
+                            <button onClick={contactHandler} className="query-submit">SUBMIT</button>
                         </div>
                     </Grid>
                 </Grid>

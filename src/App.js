@@ -8,6 +8,9 @@ import Gallery from './Pages/Gallery/Gallery';
 import BlogMainPage from './Pages/Blog/BlogMainPage';
 import Dashboard from './Modules/Drawer/Dashboard';
 import Signup from './Pages/SignUp/Signup';
+import LearningPath from './Components/Component2/LearningPath'
+import Cources from './Components/Component3/Cources';
+import Assessment from './Components/Component4/Assessment';
 
 function App() {
   return (
@@ -23,9 +26,9 @@ function App() {
           <Route path='/blog' exact element={<BlogMainPage />} />
           <Route path='/login' exact element={<Dashboard />} />
           <Route path='/signup' exact element={<Signup />} />
-
-
-
+          <Route path='/learning-path' exact element={<LearningPath />} />
+          <Route path='/dashboard-courses' exact element={<Cources />} />
+          <Route path='/assessments' exact element={<Assessment />} />
 
         </Routes>
       </BrowserRouter>
