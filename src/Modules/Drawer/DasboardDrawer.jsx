@@ -5,7 +5,7 @@ import Logo from '../../Assets/Front-Page/Logo4.png'
 import { MdDashboard, MdLocalLibrary, MdOutlineSlowMotionVideo } from 'react-icons/md';
 import { FaClipboardCheck, FaProjectDiagram } from 'react-icons/fa';
 import { GrStorage } from 'react-icons/gr';
-import { GiHamburgerMenu } from 'react-icons/gi'
+// import { GiHamburgerMenu } from 'react-icons/gi'
 import { BiHelpCircle } from 'react-icons/bi';
 import { FiLogOut } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
@@ -25,7 +25,7 @@ const DrawerDasboard = (props) => {
 
         <>
             <div className='dashboard-nav'>
-                <GiHamburgerMenu onClick={handleDrawerOpen} />
+                <MdDashboard onClick={handleDrawerOpen} />
                 <span className='component-title'>{props.componentName}</span>
             </div>
             <Drawer

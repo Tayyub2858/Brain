@@ -1,11 +1,9 @@
-import { Grid } from "@material-ui/core";
+import { Grid, LinearProgress, CircularProgress } from "@material-ui/core";
 import React from "react";
 import './DashboardStyles.css'
 import img from '../../Assets/Dashboard/Pro_Tips_Analytics.png'
 import icon from '../../Assets/Dashboard/icon-meetings.png'
 import icons from '../../Assets/Dashboard/icon-portfolio-projects.png'
-// import LinearProgressWithLabel   from '@material-ui/core';
-// import CircularProgressWithLabel from '@material-ui/core';
 import icon1 from '../../Assets/Dashboard/10_Courses_Completed.png'
 import icon2 from '../../Assets/Dashboard/14_Day_Streak.png';
 import icon3 from '../../Assets/Dashboard/180_Day_Streak.png';
@@ -35,7 +33,7 @@ const DashBoard = () => {
                                             <div className="recent-course-text">
                                                 <h2 className="recent-course-title">Excel Pro Tips : Analytics</h2>
                                                 <div className="progress-recent-course">
-                                                    {/* <LinearProgressWithLabel variant="determinate" className="progressbarwithlabel" value={35} /> */}
+                                                    <LinearProgress variant="determinate" className="progressbarwithlabel" value={35} />
                                                     <p className="progress-value">35%</p>
                                                 </div>
                                                 <div className="recent-course-btn">
@@ -96,42 +94,50 @@ const DashBoard = () => {
                                     <div className="progess-section">
                                         <h3>Microsoft Power BI Desktop</h3>
                                         <div className="progress-barsection">
-                                            {/* <LinearProgressWithLabel variant="determinate" className="progressbarwithlabel" value={100} /> */}
+                                                    <LinearProgress variant="determinate" className="progressbarwithlabel" value={35} />
+                                            
                                             <p className="progress-value">100%</p>
                                         </div>
                                         <h3>Microsoft Power BI Service</h3>
                                         <div className="progress-barsection">
-                                            {/* <LinearProgressWithLabel variant="determinate" className="progressbarwithlabel" value={80} /> */}
+                                                    <LinearProgress variant="determinate" className="progressbarwithlabel" value={35} />
+                                            
                                             <p className="progress-value">80%</p>
                                         </div>
                                         <h3>Thinking Like an Analyst</h3>
                                         <div className="progress-barsection">
-                                            {/* <LinearProgressWithLabel variant="determinate" className="progressbarwithlabel" value={75} /> */}
+                                                    <LinearProgress variant="determinate" className="progressbarwithlabel" value={35} />
+                                            
                                             <p className="progress-value">75%</p>
                                         </div>
                                         <h3>Advanced DAX for Power BI</h3>
                                         <div className="progress-barsection">
-                                            {/* <LinearProgressWithLabel variant="determinate" className="progressbarwithlabel" value={60} /> */}
+                                                    <LinearProgress variant="determinate" className="progressbarwithlabel" value={35} />
+                                            
                                             <p className="progress-value">60%</p>
                                         </div>
                                         <h3>Microsoft PL-3000 Exam Prep</h3>
                                         <div className="progress-barsection">
-                                            {/* <LinearProgressWithLabel variant="determinate" className="progressbarwithlabel" value={45} /> */}
+                                                    <LinearProgress variant="determinate" className="progressbarwithlabel" value={35} />
+                                            
                                             <p className="progress-value">45%</p>
                                         </div>
                                         <h3>Excel Pro Tips: Analytics</h3>
                                         <div className="progress-barsection">
-                                            {/* <LinearProgressWithLabel variant="determinate" className="progressbarwithlabel" value={80} /> */}
+                                                    <LinearProgress variant="determinate" className="progressbarwithlabel" value={35} />
+                                            
                                             <p className="progress-value">80%</p>
                                         </div>
                                         <h3>Microsoft Power BI Desktop</h3>
                                         <div className="progress-barsection">
-                                            {/* <LinearProgressWithLabel variant="determinate" className="progressbarwithlabel" value={70} /> */}
+                                                    <LinearProgress variant="determinate" className="progressbarwithlabel" value={35} />
+                                            
                                             <p className="progress-value">70%</p>
                                         </div>
                                         <h3>Microsoft Power BI Desktop</h3>
                                         <div className="progress-barsection">
-                                            {/* <LinearProgressWithLabel variant="determinate" className="progressbarwithlabel" value={20} /> */}
+                                                    <LinearProgress variant="determinate" className="progressbarwithlabel" value={35} />
+                                            
                                             <p className="progress-value">20%</p>
                                         </div>
                                     </div>
@@ -146,14 +152,14 @@ const DashBoard = () => {
                                 <Grid container>
                                     <Grid item xs={12} sm={12} md={5}>
                                         <div className="Circle-progress">
-                                            {/* <CircularProgressWithLabel variant="determinate" className="circularprogress" value={30} /> */}
+                                            <CircularProgress variant="determinate" className="circularprogress" value={30} />
                                             <p>70% progress</p>
                                         </div>
                                     </Grid>
                                     <Grid item xs={12} sm={12} md={7}>
                                         <p className="Tool-progress">Tool Progress</p>
                                         <div className="progress-barsection">
-                                            {/* <LinearProgressWithLabel variant="determinate" className="progressbarwithlabel" value={86} /> */}
+                                            <LinearProgress variant="determinate" className="progressbarwithlabel" value={86} />
                                             <p className="progress-value">86%</p>
                                         </div>
                                     </Grid>
