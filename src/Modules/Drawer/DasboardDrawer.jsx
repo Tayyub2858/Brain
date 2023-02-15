@@ -5,11 +5,11 @@ import Logo from '../../Assets/Front-Page/Logo4.png'
 import { MdDashboard, MdLocalLibrary, MdOutlineSlowMotionVideo } from 'react-icons/md';
 import { FaClipboardCheck, FaProjectDiagram } from 'react-icons/fa';
 import { GrStorage } from 'react-icons/gr';
-import {GiHamburgerMenu} from 'react-icons/gi'
+import { GiHamburgerMenu } from 'react-icons/gi'
 import { BiHelpCircle } from 'react-icons/bi';
 import { FiLogOut } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
-const DrawerDasboard = () => {
+const DrawerDasboard = (props) => {
 
     const [open, setOpen] = React.useState(false);
 
@@ -24,7 +24,10 @@ const DrawerDasboard = () => {
     return (
 
         <>
-       <GiHamburgerMenu onClick={handleDrawerOpen}/>
+            <div className='dashboard-nav'>
+                <GiHamburgerMenu onClick={handleDrawerOpen} />
+                <span className='component-title'>{props.componentName}</span>
+            </div>
             <Drawer
                 anchor="left"
                 onClose={handleDrawerClose}
@@ -34,44 +37,44 @@ const DrawerDasboard = () => {
 
 
 
-                <div className="Dashboard-container">
-                    <div className="dashbord-left-side">
-                        <div className="sidebar">
-                            <div className='sidebar-list'>
-                                <img src={Logo} alt="Display Logo" className='sidebar-logo' />
-                                <Link className="sidebar-row" to='/login' onClick={handleDrawerClose}>
-                                    <li className='sidebar-icons' ><MdDashboard /></li>
-                                    <li className='sidebar-title' >Dashboard </li>
-                                </Link>
-                                <Link className="sidebar-row" to='/learning-path' onClick={handleDrawerClose}>
-                                    <li className='sidebar-icons' ><MdLocalLibrary /></li>
-                                    <li className='sidebar-title' >My Learning Path</li>
-                                </Link>
-                                <Link className="sidebar-row" to='/dashboard-courses' onClick={handleDrawerClose}>
-                                    <li className='sidebar-icons' ><MdOutlineSlowMotionVideo/></li>
-                                    <li className='sidebar-title' >Courses</li>
-                                </Link>
-                                <Link className="sidebar-row" to='/assessments' onClick={handleDrawerClose}>
-                                    <li className='sidebar-icons'><FaClipboardCheck /></li>
-                                    <li className='sidebar-title' >Assessments</li>
-                                </Link>
-                                <Link className="sidebar-row" to='/portfolio' onClick={handleDrawerClose}>
-                                    <li className='sidebar-icons' ><FaProjectDiagram /></li>
-                                    <li className='sidebar-title' >Portfolio</li>
-                                </Link>
-                                <Link className="sidebar-row" to='/dataplayground' onClick={handleDrawerClose}>
-                                    <li className='sidebar-icons' ><GrStorage /></li>
-                                    <li className='sidebar-title' >Data Playground</li>
-                                </Link>
-                                <Link className="sidebar-row" to='/helpcenter' onClick={handleDrawerClose}>
-                                    <li className='sidebar-icons' ><BiHelpCircle /></li>
-                                    <li className='sidebar-title' >Help Center</li>
-                                </Link>
-                                <Link className="sidebar-row" to='/logout' onClick={handleDrawerClose}>
-                                    <li className='sidebar-icons' ><FiLogOut /></li>
-                                    <li className='sidebar-title' >Logout</li>
-                                </Link>
-                            </div>
+
+
+                <div className="sidebar">
+                    <div className='sidebar-list'>
+                        <img src={Logo} alt="Display Logo" className='sidebar-logo' />
+                        <Link className="sidebar-row" to='/login' onClick={handleDrawerClose}>
+                            <li className='sidebar-icons' ><MdDashboard /></li>
+                            <li className='sidebar-title' >Dashboard </li>
+                        </Link>
+                        <Link className="sidebar-row" to='/learning-path' onClick={handleDrawerClose}>
+                            <li className='sidebar-icons' ><MdLocalLibrary /></li>
+                            <li className='sidebar-title' >My Learning Path</li>
+                        </Link>
+                        <Link className="sidebar-row" to='/dashboard-courses' onClick={handleDrawerClose}>
+                            <li className='sidebar-icons' ><MdOutlineSlowMotionVideo /></li>
+                            <li className='sidebar-title' >Courses</li>
+                        </Link>
+                        <Link className="sidebar-row" to='/assessments' onClick={handleDrawerClose}>
+                            <li className='sidebar-icons'><FaClipboardCheck /></li>
+                            <li className='sidebar-title' >Assessments</li>
+                        </Link>
+                        <Link className="sidebar-row" to='/portfolio' onClick={handleDrawerClose}>
+                            <li className='sidebar-icons' ><FaProjectDiagram /></li>
+                            <li className='sidebar-title' >Portfolio</li>
+                        </Link>
+                        <Link className="sidebar-row" to='/data-playground' onClick={handleDrawerClose}>
+                            <li className='sidebar-icons' ><GrStorage /></li>
+                            <li className='sidebar-title' >Data Playground</li>
+                        </Link>
+                        <div className="bottom-txt">
+                            <Link className="sidebar-row" to='/helpcenter' onClick={handleDrawerClose}>
+                                <li className='sidebar-icons' ><BiHelpCircle /></li>
+                                <li className='sidebar-title' >Help Center</li>
+                            </Link>
+                            <Link className="sidebar-row" to='/logout' onClick={handleDrawerClose}>
+                                <li className='sidebar-icons' ><FiLogOut /></li>
+                                <li className='sidebar-title' >Logout</li>
+                            </Link>
                         </div>
                     </div>
                 </div>

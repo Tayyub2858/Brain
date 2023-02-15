@@ -6,11 +6,12 @@ import Courses from './Pages/Learn/Courses';
 import CorporateTraining from './Pages/CoporateTraining/CorporateFE/CorporateTraining';
 import Gallery from './Pages/Gallery/Gallery';
 import BlogMainPage from './Pages/Blog/BlogMainPage';
-import Dashboard from './Modules/Drawer/Dashboard';
+import DashBoard from './Components/Component1/Dashboard';
 import Signup from './Pages/SignUp/Signup';
 import LearningPath from './Components/Component2/LearningPath'
 import Cources from './Components/Component3/Cources';
 import Assessment from './Components/Component4/Assessment';
+import DataPlayground from './Components/Component7/DataPlayground';
 
 function App() {
   return (
@@ -24,11 +25,13 @@ function App() {
           <Route path='/corporate-training' exact element={<CorporateTraining />} />
           <Route path='/gallery' exact element={<Gallery />} />
           <Route path='/blog' exact element={<BlogMainPage />} />
-          <Route path='/login' exact element={<Dashboard />} />
+          <Route path='/login' exact element={<DashBoard />} />
           <Route path='/signup' exact element={<Signup />} />
           <Route path='/learning-path' exact element={<LearningPath />} />
           <Route path='/dashboard-courses' exact element={<Cources />} />
           <Route path='/assessments' exact element={<Assessment />} />
+          <Route path='/data-playground' exact element={<DataPlayground />} />
+
 
         </Routes>
       </BrowserRouter>

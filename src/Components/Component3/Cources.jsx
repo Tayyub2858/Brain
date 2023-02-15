@@ -5,7 +5,7 @@ import DrawerDasboard from "../../Modules/Drawer/DasboardDrawer";
 const Cources = () => {
     return (
         <>
-            <DrawerDasboard />
+            <DrawerDasboard componentName={"My Courses"} />
             <CourseCard />
         </>
     )
