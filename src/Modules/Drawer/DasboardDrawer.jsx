@@ -5,7 +5,6 @@ import Logo from '../../Assets/Front-Page/Logo4.png'
 import { MdDashboard, MdLocalLibrary, MdOutlineSlowMotionVideo } from 'react-icons/md';
 import { FaClipboardCheck, FaProjectDiagram } from 'react-icons/fa';
 import { GrStorage } from 'react-icons/gr';
-// import { GiHamburgerMenu } from 'react-icons/gi'
 import { BiHelpCircle } from 'react-icons/bi';
 import { FiLogOut } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
@@ -33,11 +32,6 @@ const DrawerDasboard = (props) => {
                 onClose={handleDrawerClose}
                 open={open}
             >
-
-
-
-
-
 
                 <div className="sidebar">
                     <div className='sidebar-list'>
@@ -71,7 +65,7 @@ const DrawerDasboard = (props) => {
                                 <li className='sidebar-icons' ><BiHelpCircle /></li>
                                 <li className='sidebar-title' >Help Center</li>
                             </Link>
-                            <Link className="sidebar-row" to='/logout' onClick={handleDrawerClose}>
+                            <Link className="sidebar-row" to='/' onClick={handleDrawerClose}>
                                 <li className='sidebar-icons' ><FiLogOut /></li>
                                 <li className='sidebar-title' >Logout</li>
                             </Link>
