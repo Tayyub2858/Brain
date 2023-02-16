@@ -41,7 +41,7 @@ const BlogSlider = () => {
                                 </Grid>
                                 <Grid item xs={12} sm={12} md={6}>
                                     <div className="slider-box-right">
-                                        <img src={img4} alt="Display Slider Image" className="slider-img" />
+                                        <img src={img4} alt="DisplaySlider" className="slider-img" />
                                     </div>
                                 </Grid>
                             </Grid>
@@ -62,7 +62,7 @@ const BlogSlider = () => {
                                 </Grid>
                                 <Grid item xs={12} sm={12} md={6}>
                                     <div className="slider-box-left">
-                                        <img src={img5} alt="Display Slider Image" className="slider-img" />
+                                        <img src={img5} alt="Display" className="slider-img" />
                                     </div>
                                 </Grid>
                             </Grid>
@@ -83,7 +83,7 @@ const BlogSlider = () => {
                                 </Grid>
                                 <Grid item xs={12} sm={12} md={6}>
                                     <div className="slider-box-left">
-                                        <img src={img2} alt="Display Slider Image" className="slider-img" />
+                                        <img src={img2} alt="Slider" className="slider-img" />
                                     </div>
                                 </Grid>
                             </Grid>
@@ -104,7 +104,7 @@ const BlogSlider = () => {
                                 </Grid>
                                 <Grid item xs={12} sm={12} md={6}>
                                     <div className="slider-box-left">
-                                        <img src={img1} alt="Display Slider Image" className="slider-img" />
+                                        <img src={img1} alt="Display Slider" className="slider-img" />
                                     </div>
                                 </Grid>
                             </Grid>
@@ -125,7 +125,7 @@ const BlogSlider = () => {
                                 </Grid>
                                 <Grid item xs={12} sm={12} md={6}>
                                     <div className="slider-box-left">
-                                        <img src={img3} alt="Display Slider Image" className="slider-img" />
+                                        <img src={img3} alt="slider" className="slider-img" />
                                     </div>
                                 </Grid>
                             </Grid>

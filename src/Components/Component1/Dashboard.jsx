@@ -94,49 +94,49 @@ const DashBoard = () => {
                                     <div className="progess-section">
                                         <h3>Microsoft Power BI Desktop</h3>
                                         <div className="progress-barsection">
-                                                    <LinearProgress variant="determinate" className="progressbarwithlabel" value={35} />
+                                                    <LinearProgress variant="determinate" className="progressbarwithlabel" value={100} />
                                             
                                             <p className="progress-value">100%</p>
                                         </div>
                                         <h3>Microsoft Power BI Service</h3>
                                         <div className="progress-barsection">
-                                                    <LinearProgress variant="determinate" className="progressbarwithlabel" value={35} />
+                                                    <LinearProgress variant="determinate" className="progressbarwithlabel" value={80} />
                                             
                                             <p className="progress-value">80%</p>
                                         </div>
                                         <h3>Thinking Like an Analyst</h3>
                                         <div className="progress-barsection">
-                                                    <LinearProgress variant="determinate" className="progressbarwithlabel" value={35} />
+                                                    <LinearProgress variant="determinate" className="progressbarwithlabel" value={75} />
                                             
                                             <p className="progress-value">75%</p>
                                         </div>
                                         <h3>Advanced DAX for Power BI</h3>
                                         <div className="progress-barsection">
-                                                    <LinearProgress variant="determinate" className="progressbarwithlabel" value={35} />
+                                                    <LinearProgress variant="determinate" className="progressbarwithlabel" value={60} />
                                             
                                             <p className="progress-value">60%</p>
                                         </div>
                                         <h3>Microsoft PL-3000 Exam Prep</h3>
                                         <div className="progress-barsection">
-                                                    <LinearProgress variant="determinate" className="progressbarwithlabel" value={35} />
+                                                    <LinearProgress variant="determinate" className="progressbarwithlabel" value={45} />
                                             
                                             <p className="progress-value">45%</p>
                                         </div>
                                         <h3>Excel Pro Tips: Analytics</h3>
                                         <div className="progress-barsection">
-                                                    <LinearProgress variant="determinate" className="progressbarwithlabel" value={35} />
+                                                    <LinearProgress variant="determinate" className="progressbarwithlabel" value={80} />
                                             
                                             <p className="progress-value">80%</p>
                                         </div>
                                         <h3>Microsoft Power BI Desktop</h3>
                                         <div className="progress-barsection">
-                                                    <LinearProgress variant="determinate" className="progressbarwithlabel" value={35} />
+                                                    <LinearProgress variant="determinate" className="progressbarwithlabel" value={70} />
                                             
                                             <p className="progress-value">70%</p>
                                         </div>
                                         <h3>Microsoft Power BI Desktop</h3>
                                         <div className="progress-barsection">
-                                                    <LinearProgress variant="determinate" className="progressbarwithlabel" value={35} />
+                                                    <LinearProgress variant="determinate" className="progressbarwithlabel" value={20} />
                                             
                                             <p className="progress-value">20%</p>
                                         </div>

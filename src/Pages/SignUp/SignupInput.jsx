@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const SignupInput = () => {
     const [firstName, setfirstName] = useState("");
@@ -10,7 +10,6 @@ const SignupInput = () => {
         e.preventDefault();
 
         console.log(firstName, lastName, emailAddress, password);
-
         setfirstName("")
         setlastName("")
         setemailAddress("")

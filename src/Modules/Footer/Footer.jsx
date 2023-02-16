@@ -19,7 +19,7 @@ const Footer = () => {
               <Link to='/'><img src={Logo} alt="Footer Logo" className='footer-logo' /></Link>
             </div>
           </Grid>
-          <Grid item xs={6} sm={6} md={2}>
+          <Grid item xs={6} sm={6} md={3}>
             <div className="address-container">
               <h4 className="footer-heading">
                 HEAD OFFICE
@@ -75,6 +75,7 @@ const Footer = () => {
               </p>
             </div>
           </Grid>
+         
           <Grid item xs={3} sm={3} md={1}>
             <div className="footer-links">
               <h4 className="footer-heading">
@@ -88,18 +89,7 @@ const Footer = () => {
               </p>
             </div>
           </Grid>
-          <Grid item xs={12} sm={12} md={3}>
-            <div className="newsletter-container">
-              <h4 className="footer-heading">
-                NEWS LETTER
-              </h4>
-              <p className="footer-txt">
-                Subscribe our News Letter for updates
-              </p>
-              <input type="text" placeholder='info@brainanalytics.pk' className="sub" />
-              <button className="sub-btn"> Subscribe</button>
-            </div>
-          </Grid>
+          <Grid item xs={12} sm={12} md={1}></Grid>
           <Grid item xs={1} sm={1} md={1}>
             <div className="barcode">
               <img src={barcode} alt="barcode" className="barcode-img" />

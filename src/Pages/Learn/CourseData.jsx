@@ -3,121 +3,23 @@ import img2 from '../../Assets/Learn/Self-course/digital-marketing.png';
 import img3 from '../../Assets/Learn/Self-course/data-analysis.png';
 import img4 from '../../Assets/Learn/Self-course/graphic-design.png';
 import img5 from '../../Assets/Learn/Self-course/virtual-assistant.png';
+import { db } from '../../ConfigFile/Firebase-Config';
+import { getDocs,collection } from '@firebase/firestore/lite';
+ const getUser= async(db)=>{
+    try { const Users = collection(db , 'CourseCards')
+     const Ushnapshot = await getDocs(Users);
+     const UsersList = Ushnapshot.docs.map(doc => ({...doc.data(),id:doc.id}));
+    // console.log(UsersList);
+    Data.push(...UsersList)
+    console.log(Data);
+  } catch(err){
+     console.log(err.message)
+  }
+ };
+
+ getUser(db);
 const Data = 
      [
-        {   key:1,
-            img : img3,
-            title : "Data Analysis & Visualization in Power BI",
-            dec : "Learn essential statistics for data analysis, including probability distributions, confidence intervals, hypothesis tests,",
-            txt:"Progress",
-            btn : "Course Info",
-            duration : "16 Weeks",
-        },
-        {   key:2,
-            img : img3,
-            title : "Advanced Financial Reporting in Power BI",
-            dec : "Learn Advanced SQL skills for building, optimizing, and administering relational databases using MySQL Workbench  ",
-            txt:"Progress",
-            btn : "Course Info",
-            duration : "16 Weeeks",
-        },
-        {   key:3,
-            img : img3,
-            title : "Financial Planning & Analysis in Excel and PBI",
-            dec : "Learn essential statistics for data analysis, including probability distributions, confidence intervals, hypothesis tests, ",
-            txt:"Progress",
-            btn : "Course Info",
-            duration : "16 Weeks",
-        },
-        {   
-            key:4,
-            img : img5,
-            title : "Amazon FBA Wholesale",
-            dec : "Master the core building blocks of Python for data analysis, including data types, variables, conditional logic, loops,",
-            txt:"Progress",
-            btn : "Course Info",
-            duration : "16 Weeks",
-        },
-        {
-            key:5,
-            img : img5,
-            title : "Amazon FBA Private Label",
-            dec : "Learn how to create, manage, publish, and share reports and dashboards using Tableau Server and Tableau , ",
-            txt:"Progress",
-            btn : "Course Info",
-            duration : "16 Weeks",
-        },
-        {
-            key:6,
-            img : img5,
-            title : "Daraz Virtual Assistant",
-            dec : "Step-by-step guide to finding your path, building your brand, acing the interview, and landing your analytics dream job ",
-            txt:"Progress",
-            btn : "Course Info",
-            duration : "16 Weeks",
-        },
-        {
-            key:7,
-            img : img4,
-            title : "Fundamentals of Graphic Design",
-            dec : "Learn the basics of Unsupervised ML, including cluster analysis, association mining, outlier detection & dimensionality reduction",
-            txt:"Progress",
-            btn : "Course Info",
-            duration : "16 Weeks",
-        },
-        {
-            key:8,
-            img : img4,
-            title : "Advanced Graphic Designing",
-            dec : " Crash course for aspiring analytics & BI professionals looking to build the foundation for a successful career",
-            txt:"Progress",
-            btn : "Course Info",
-            duration : "16 Weeks",
-        },
-        {
-            key:9,
-            img : img4,
-            title : "Advanced Video Editing",
-            dec : "Learn essential statistics for data analysis, including probability distributions, confidence intervals, hypothesis tests,",
-            txt:"Progress",
-            btn : "Course Info",
-            duration : "16 Weeks",
-        }, 
-        {
-            key:9,
-            img : img1,
-            title : "Advanced Front-end Development",
-            dec : "Learn essential statistics for data analysis, including probability distributions, confidence intervals, hypothesis tests,",
-            txt:"Progress",
-            btn : "Course Info",
-            duration : "16 Weeks",
-        },
-        {
-            key:9,
-            img : img1,
-            title : "Modern Web App Development",
-            dec : "Learn essential statistics for data analysis, including probability distributions, confidence intervals, hypothesis tests,",
-            txt:"Progress",
-            btn : "Course Info",
-            duration : "16 Weeks",
-        },
-        {
-            key:9,
-            img : img1,
-            title : "Hybrid Mobile App Development",
-            dec : "Learn essential statistics for data analysis, including probability distributions, confidence intervals, hypothesis tests,",
-            txt:"Progress",
-            btn : "Course Info",
-            duration : "16 Weeks",
-        },  
-        {
-            key:9,
-            img : img2,
-            title : "Advanced Digital Marketing",
-            dec : "Learn essential statistics for data analysis, including probability distributions, confidence intervals, hypothesis tests,",
-            txt:"Progress",
-            btn : "Course Info",
-            duration : "16 Weeks",
-        },
+     
     ]
 export default Data;
