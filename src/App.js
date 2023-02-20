@@ -12,6 +12,7 @@ import LearningPath from './Components/Component2/LearningPath'
 import Cources from './Components/Component3/Cources';
 import Assessment from './Components/Component4/Assessment';
 import DataPlayground from './Components/Component7/DataPlayground';
+import LoginPage from './Pages/Login/LoginPage';
 
 function App() {
   return (
@@ -25,12 +26,13 @@ function App() {
           <Route path='/corporate-training' exact element={<CorporateTraining />} />
           <Route path='/gallery' exact element={<Gallery />} />
           <Route path='/blog' exact element={<BlogMainPage />} />
-          <Route path='/login' exact element={<DashBoard />} />
+          <Route path='/login' exact element={<LoginPage />} />
           <Route path='/signup' exact element={<Signup />} />
           <Route path='/learning-path' exact element={<LearningPath />} />
           <Route path='/dashboard-courses' exact element={<Cources />} />
           <Route path='/assessments' exact element={<Assessment />} />
           <Route path='/data-playground' exact element={<DataPlayground />} />
+          <Route path='/dashboard' exact element={<DashBoard />} />
 
 
         </Routes>

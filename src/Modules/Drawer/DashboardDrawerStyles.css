@@ -1,6 +1,7 @@
 .dashboard-nav{
-    /* background-color: var(--mediumText); */
+   background: var(--endFooter);
     padding: 1% 1% 1% 1%;
+    color: var(--white);
 }
 .sidebar{
     height: 100%;

@@ -1,0 +1,5 @@
+.login-page-container{
+    background-color: var(--dark);
+    background-size: cover;
+    height: 100%;
+}
