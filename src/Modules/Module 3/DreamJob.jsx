@@ -32,7 +32,7 @@ const DreamJob = () => {
         <div className="create-job-container">
           <Grid container>
             <Grid item xs={12} sm={12} md={4}>
-              <div className="job-learn">
+              <div data-aos='fade-up-right' data-aos-duration='1500' className="job-learn">
                 <img src={Createimg} alt="Create Jobs" className="imgjob" />
                 <h1 className="job-card-heading">Create</h1>
                 <p className="job-card-txt">
@@ -43,7 +43,7 @@ const DreamJob = () => {
               </div>
             </Grid>
             <Grid item xs={12} sm={12} md={4}>
-              <div className="job-learn">
+              <div data-aos='fade-up' data-aos-duration='1500' className="job-learn">
                 <img src={Learnimg} alt="Learn Jobs" className="imgjob" />
                 <h1 className="job-card-heading">Learn</h1>
                 <p className="job-card-txt">
@@ -54,7 +54,7 @@ const DreamJob = () => {
               </div>
             </Grid>
             <Grid item xs={12} sm={12} md={4}>
-              <div className="job-learn">
+              <div data-aos='fade-up-left' data-aos-duration='1500' className="job-learn">
                 <img src={Connectimg} alt="Connect Jobs" className="imgjob" />
                 <h1 className="job-card-heading">Connect</h1>
                 <p className="job-card-txt">

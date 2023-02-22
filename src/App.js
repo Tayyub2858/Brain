@@ -1,5 +1,6 @@
 import LandingPage from './Pages/LandingPage/LandingPage';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useEffect } from 'react';
 import Pricing from './Pages/Pricing/Pricing';
 import Contact from './Pages/Contact/Contact';
 import Courses from './Pages/Learn/Courses';
@@ -8,13 +9,25 @@ import Gallery from './Pages/Gallery/Gallery';
 import BlogMainPage from './Pages/Blog/BlogMainPage';
 import DashBoard from './Components/Component1/Dashboard';
 import Signup from './Pages/SignUp/Signup';
-import LearningPath from './Components/Component2/LearningPath'
-import Cources from './Components/Component3/Cources';
-import Assessment from './Components/Component4/Assessment';
+import LearningPath from './Components/Component2/LearningPath';
 import DataPlayground from './Components/Component7/DataPlayground';
 import LoginPage from './Pages/Login/LoginPage';
-
+import AppDevelopment from './LearningPath/AppDevelopment/AppDevelopment';
+import DataAnalysis from './LearningPath/DataAnalysis/DataAnalysis';
+import DigitalMarketing from './LearningPath/DigitalMarketing/DigitalMarketing';
+import GraphicDesigning from './LearningPath/GraphicDesigning/GraphicDesigning';
+import VideoEditing from './LearningPath/VideoEditing/VideoEditing';
+import VirtualAssistant from './LearningPath/Virtula-Assistant/VirtualAssistant';
+import WebDevelopment from './LearningPath/WebDevelopment/WebDevelopment';
+import DataAnalysisShowVideo from './LearningPath/DataAnalysis/DataAnalysisVidos/DataAanalysisShow-video';
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 function App() {
+  useEffect(() => {
+    AOS.init(
+      {once: true }
+    );
+  }, [])
   return (
     <>
       <BrowserRouter>
@@ -28,13 +41,18 @@ function App() {
           <Route path='/blog' exact element={<BlogMainPage />} />
           <Route path='/login' exact element={<LoginPage />} />
           <Route path='/signup' exact element={<Signup />} />
+          {/* add private Routes */}
           <Route path='/learning-path' exact element={<LearningPath />} />
-          <Route path='/dashboard-courses' exact element={<Cources />} />
-          <Route path='/assessments' exact element={<Assessment />} />
           <Route path='/data-playground' exact element={<DataPlayground />} />
           <Route path='/dashboard' exact element={<DashBoard />} />
-
-
+          <Route path='/dashboard' exact element={<AppDevelopment />} />
+          <Route path='/dashboard' exact element={<DigitalMarketing />} />
+          <Route path='/learning-path/accounting&finance' exact element={<DataAnalysis />} />
+          <Route path='/learning-path/DataAnalysis/videos' exact element={<DataAnalysisShowVideo />} />
+          <Route path='/dashboard' exact element={<GraphicDesigning />} />
+          <Route path='/dashboard' exact element={<VideoEditing />} />
+          <Route path='/dashboard' exact element={<VirtualAssistant />} />
+          <Route path='/dashboard' exact element={<WebDevelopment />} />
         </Routes>
       </BrowserRouter>
     </>

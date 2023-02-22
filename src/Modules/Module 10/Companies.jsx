@@ -15,14 +15,14 @@ const Companies = () => {
         <>
             <div className="companies-container">
                 <Grid container>
-                    <Grid item xs={12} sm={12} md={6}>
+                    <Grid item xs={12} sm={12} md={5}>
                         <div className="left-companies-container">
                             <h2 className="companies-heading">
-                                Trusted by top companies to <br /> upskill their teams
+                                Trusted by top companies to  upskill their teams
                             </h2>
                         </div>
                     </Grid>
-                    <Grid item xs={12} sm={12} md={6}>
+                    <Grid item xs={12} sm={12} md={7}>
                         <div className="right-companies-container">
                             <Swiper
                                 spaceBetween={0}

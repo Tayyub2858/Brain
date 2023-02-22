@@ -5,8 +5,7 @@ import img3 from '../../../Assets/Blog/Jessica_Coats_Image.jpeg';
 import img4 from '../../../Assets/Blog/closeup-of-blogger-hands-using-data-on-mobile-smar-2021-11-03-01-17-56-utc__1_.jpg';
 import img5 from '../../../Assets/Blog/Blog_Featured.jpg';
 
-const Data = {
-    CardData: [
+const Data =  [
         {
             key: 1,
             img: img1,
@@ -79,5 +78,4 @@ const Data = {
         },
 
     ]
-}
 export default Data;

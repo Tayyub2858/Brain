@@ -28,7 +28,7 @@
 .career-text{
     font-size: large;
     font-weight: bold;
-    color: var(--dark);
+    color: var(--endFooter);
     padding: 5%;
     padding-top: 10%;
 }
@@ -43,6 +43,11 @@
 .career-img-name{
     text-align: center;
     font-size: medium;
+    color: var(--dark);
+}
+.career-img-designation{
+    text-align: center;
+    font-size: small;
     color: var(--smallText);
 }
 @media only screen and (max-device-width: 768px) {

@@ -36,21 +36,13 @@ const DrawerDasboard = (props) => {
                 <div className="sidebar">
                     <div className='sidebar-list'>
                         <img src={Logo} alt="Display Logo" className='sidebar-logo' />
-                        <Link className="sidebar-row" to='/login' onClick={handleDrawerClose}>
+                        <Link className="sidebar-row" to='/dashboard' onClick={handleDrawerClose}>
                             <li className='sidebar-icons' ><MdDashboard /></li>
                             <li className='sidebar-title' >Dashboard </li>
                         </Link>
                         <Link className="sidebar-row" to='/learning-path' onClick={handleDrawerClose}>
                             <li className='sidebar-icons' ><MdLocalLibrary /></li>
                             <li className='sidebar-title' >My Learning Path</li>
-                        </Link>
-                        <Link className="sidebar-row" to='/dashboard-courses' onClick={handleDrawerClose}>
-                            <li className='sidebar-icons' ><MdOutlineSlowMotionVideo /></li>
-                            <li className='sidebar-title' >Courses</li>
-                        </Link>
-                        <Link className="sidebar-row" to='/assessments' onClick={handleDrawerClose}>
-                            <li className='sidebar-icons'><FaClipboardCheck /></li>
-                            <li className='sidebar-title' >Assessments</li>
                         </Link>
                         <Link className="sidebar-row" to='/portfolio' onClick={handleDrawerClose}>
                             <li className='sidebar-icons' ><FaProjectDiagram /></li>

@@ -1,8 +1,4 @@
-import img1 from '../../Assets/Learn/Self-course/web-app.png';
-import img2 from '../../Assets/Learn/Self-course/digital-marketing.png';
-import img3 from '../../Assets/Learn/Self-course/data-analysis.png';
-import img4 from '../../Assets/Learn/Self-course/graphic-design.png';
-import img5 from '../../Assets/Learn/Self-course/virtual-assistant.png';
+
 import { db } from '../../ConfigFile/Firebase-Config';
 import { getDocs,collection } from '@firebase/firestore/lite';
  const getUser= async(db)=>{

@@ -21,7 +21,6 @@ const DashBoard = () => {
                 <Grid container>
                     <Grid item xs={12} sm={12} md={7}>
                         <div className="dashbord-left-container">
-                            {/* Start Recent Course box html  */}
                             <div className="Course-box">
                                 <div className="course-box-inner">
                                     <h4 className="course-box-title">YOUR MOST RECENT COURSE</h4>
@@ -47,7 +46,7 @@ const DashBoard = () => {
                             </div>
                             {/* End Recent course box  */}
 
-                            {/* Start React Activites box  */}
+                            {/* Start Recent Activites box  */}
                             <div className="recent-activity-box">
                                 <div className="activity-box-text">
                                     <h3>Recent Activity</h3>

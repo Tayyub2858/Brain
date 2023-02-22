@@ -8,7 +8,7 @@ const Home = () => {
         <>
             <div className="Home-blog-container">
                 <Grid container>
-                    {Data.CardData.map((item, index) => {
+                    {Data.map((item, index) => {
                         return (
                             <Grid key={index} item xs={12} sm={12} md={6}>
                                 <BlogCard
