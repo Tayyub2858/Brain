@@ -20,6 +20,8 @@ import VideoEditing from './LearningPath/VideoEditing/VideoEditing';
 import VirtualAssistant from './LearningPath/Virtula-Assistant/VirtualAssistant';
 import WebDevelopment from './LearningPath/WebDevelopment/WebDevelopment';
 import DataAnalysisShowVideo from './LearningPath/DataAnalysis/DataAnalysisVidos/DataAanalysisShow-video';
+import AdvanceFinancialShowVideo from './LearningPath/DataAnalysis/AdvanceFinancialVideo/AdvanceFinancialShow-video';
+import FinancialPlanning from './LearningPath/DataAnalysis/FinancialPlanning/FinancalPlanning';
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 function App() {
@@ -48,8 +50,8 @@ function App() {
           <Route path='/dashboard' exact element={<AppDevelopment />} />
           <Route path='/dashboard' exact element={<DigitalMarketing />} />
           <Route path='/learning-path/accounting&finance' exact element={<DataAnalysis />} />
-          <Route path='/learning-path/DataAnalysis/videos' exact element={<DataAnalysisShowVideo />} />
-          <Route path='/dashboard' exact element={<GraphicDesigning />} />
+          <Route path='/learning-path/accounting&finance/data-analysis&visualization-in-power-bi/videos' exact element={<DataAnalysisShowVideo />} />
+          <Route path='/learning-path/accounting&finance/advanced-financial-reporting-in-power-bi/videos' exact element={<AdvanceFinancialShowVideo />} />
           <Route path='/dashboard' exact element={<VideoEditing />} />
           <Route path='/dashboard' exact element={<VirtualAssistant />} />
           <Route path='/dashboard' exact element={<WebDevelopment />} />
