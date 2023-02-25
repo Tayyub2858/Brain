@@ -32,34 +32,34 @@ const DreamJob = () => {
         <div className="create-job-container">
           <Grid container>
             <Grid item xs={12} sm={12} md={4}>
-              <div data-aos='fade-up-right' data-aos-duration='1500' className="job-learn">
+              <div className="job-learn">
                 <img src={Createimg} alt="Create Jobs" className="imgjob" />
                 <h1 className="job-card-heading">Create</h1>
                 <p className="job-card-txt">
-                  Apply your skills to real projects. and 
-                  create a portfolio to showcase your 
+                  Apply your skills to real projects. and
+                  create a portfolio to showcase your
                   work to peers and employers
                 </p>
               </div>
             </Grid>
             <Grid item xs={12} sm={12} md={4}>
-              <div data-aos='fade-up' data-aos-duration='1500' className="job-learn">
+              <div className="job-learn">
                 <img src={Learnimg} alt="Learn Jobs" className="imgjob" />
                 <h1 className="job-card-heading">Learn</h1>
                 <p className="job-card-txt">
-                  Build job-ready skills with award- 
-                  winning courses and personalized, goal- 
+                  Build job-ready skills with award-
+                  winning courses and personalized, goal-
                   oriented learning plans
                 </p>
               </div>
             </Grid>
             <Grid item xs={12} sm={12} md={4}>
-              <div data-aos='fade-up-left' data-aos-duration='1500' className="job-learn">
+              <div className="job-learn">
                 <img src={Connectimg} alt="Connect Jobs" className="imgjob" />
                 <h1 className="job-card-heading">Connect</h1>
                 <p className="job-card-txt">
-                  Join a diverse, global community of data 
-                  professionals, and connect with top 
+                  Join a diverse, global community of data
+                  professionals, and connect with top
                   analysts from around the world
                 </p>
               </div>

@@ -4,10 +4,9 @@ import DataAnalysisinput from "./DataAnalysisinput";
 import DrawerDasboard from "../../Modules/Drawer/DasboardDrawer";
 import { Grid ,Card } from "@material-ui/core";
 import { Link } from "react-router-dom";
+import CourseUserInfo from "../CourseUserInfo/CourseUserInfo";
 
 const DataAnalysis = () => {
- 
-
     return (
         <>
             <DrawerDasboard componentName={"DataAnalysis"} />
