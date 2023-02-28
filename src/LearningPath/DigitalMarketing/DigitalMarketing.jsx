@@ -15,6 +15,16 @@ const DigitalMarketing = () =>{
                     <Card className="digitalmarketing-card">
                             <img src={course.img} alt="Watch this course" className="digitalmarketing-img" />
                             <h1 className="digitalmarketing-title">{course.title}</h1>
+                                    <div className="learning-video-weeks">
+                                    <div className="learning-videos">
+                                        <p className="learning-durtion-weeks">{course.duration}</p>
+                                        <p className="learning-duration">Weeks Duration</p>
+                                    </div>
+                                    <div className="learning-videos">
+                                        <p className="learning-course-videos">{course.videos}</p>
+                                        <p className="learning-video">Videos</p>
+                                    </div>
+                                    </div>
                             <button className="digitalmarketing-watch-videos">{course.btn}</button>
                     </Card>
                   </Grid>

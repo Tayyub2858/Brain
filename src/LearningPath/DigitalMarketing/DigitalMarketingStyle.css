@@ -19,6 +19,44 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.learning-video-weeks {
+    display: flex;
+  }
+.learning-videos {
+    padding: 10% 1% 10% 1% ;
+    margin-left: 10%;
+  }
+  .learning-durtion-weeks {
+    font-size: 25px;
+    text-align: center;
+    background: var(--leftgradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  
+  .learning-duration {
+    text-align: center;
+    font-size: medium;
+    font-weight: 500;
+    color: var(--smallText);
+  }
+  
+  .learning-course-videos {
+    font-size: 25px;
+    text-align: center;
+    background: var(--leftgradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  
+  .learning-video {
+    text-align: center;
+    font-size: medium;
+    font-weight: 500;
+    color: var(--smallText);
+  }
 .digitalmarketing-watch-videos{
     padding: 3% 10% 3% 10%;
     text-align: center;

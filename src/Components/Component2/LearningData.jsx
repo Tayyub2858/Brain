@@ -30,18 +30,9 @@ const LearningData = [
         btn: "Start Course",
         link:"/learning-path/graphicdesigning"
     },
+    
     {
         key: 4,
-        img: img1,
-        title: "Video Editing",
-        duration: " 15",
-        videos: "20",
-        btn: "Start Course",
-        link:"/learning-path/videoediting"
-
-    },
-    {
-        key: 5,
         img: img1,
         title: "Website Development",
         duration: " 15",
@@ -50,18 +41,9 @@ const LearningData = [
         link:"/learning-path/webdevelopment"
 
     },
+    
     {
-        key: 6,
-        img: img1,
-        title: "Apps Development",
-        duration: " 15",
-        videos: "20",
-        btn: "Start Course",
-        link:"/learning-path/appdevelopment"
-
-    },
-    {
-        key: 7,
+        key: 5,
         img: img1,
         title: "Virtual Assistant",
         duration: " 15",

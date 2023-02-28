@@ -1,8 +1,26 @@
+import img from '../../Assets/LearningPath/web-app.png'
 const WebInput = [
     {
-        key : "0",
-        title : "Website Developmet",
-        video : "https://firebasestorage.googleapis.com/v0/b/form-b6d08.appspot.com/o/Etihad%20Group's%20CFO%20Saqib%20Riaz%20FCA%20Shares%20His%20Experience%20with%20Power%20BI%20Data%20Analysis%20_%20BrainAnalytics.mp4?alt=media&token=83d653c2-315c-4ce9-b707-a9967956bc1b",
+        key : 1,
+        img : img,
+        title : "Advanced Front-end Development",
+        btn : "Watch Videos",
+        link : "/learning-path/WebDevelopment/AdvanceDevelopment",
     },
+    {
+        key : 2,
+        img : img,
+        title : "Modern Web App Development",
+        btn : "Watch Videos",
+        link : "/learning-path/WebDevelopment/ModernDevelopment",
+    },
+    {
+        key : 3,
+        img : img,
+        title : "Hybrid Mobile App Development",
+        btn : "Watch Videos",
+        link : "/learning-path/WebDevelopment/ModernDevelopment",
+    },
+    
 ];
 export default WebInput;

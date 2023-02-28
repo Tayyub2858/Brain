@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Logo from '../../Assets/Front-Page/Logo4.png'
 import './NavStyles.css';
 import { Link } from 'react-router-dom';
+import LoginPage from '../../Pages/Login/LoginPage';
 const Nav = () => {
     
   const [isMenuClosed, setMenuClosed] = useState(true);
@@ -18,7 +19,8 @@ const Nav = () => {
                     <Link to='/Pricing'><span className="nav-btn">PRICING</span> </Link>  
                     <Link to='/gallery'><span  className="nav-btn">GALLERY</span> </Link>
                     <Link className='nav-btn' to='/contact'> <span className="nav-btn">CONTACT</span> </Link> 
-                <Link className='nav-btn' to='/login'> <span className="nav-btn">LOGIN</span> </Link> 
+                {/* <Link className='nav-btn' to='/login'> <span className="nav-btn">LOGIN</span> </Link>  */}
+                <LoginPage/>
                 <Link  to='/signup'> <button className="signup">SIGN UP</button> </Link>  
                 </div>
                 
