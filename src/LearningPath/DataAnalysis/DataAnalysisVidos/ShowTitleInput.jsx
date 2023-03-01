@@ -1,37 +1,27 @@
-import { useState , useEffect } from "react";
-
-
+import { useState } from "react";
+import { useDispatch } from "react-redux";
+import updateFormTitle from '../../../Redux/Action/Action';
 const ShowTitleInput = () => {
 
-    const[ShowTitle , setShowTitle] = useState("");  
-    const[progress , setprogress] = useState(0);
-    const[videos , setVideos] = useState(" ");
-    const handleclick= () =>{
-        setprogress(progress + 10);
-    }
-    
-  useEffect(() => {
-    // Retrieve progress from local storage when component mounts
-    const storedProgress = localStorage.getItem("progress");
-    if (storedProgress) {
-        setprogress(parseInt(storedProgress));
-    }
-  }, []);
+  const [ShowTitle, setShowTitle] = useState("");
+  const [progress, setprogress] = useState(0);
+  const [videos, setVideos] = useState(" ");
+  const dispatch = useDispatch();
+  const handleclick = () => {
+   dispatch(updateFormTitle("Data Analysis & Visualization in PBI"))
+   alert("Congratulations You've Started Your Course")
+  }
 
-  useEffect(() => {
-    // Store progress in local storage whenever it changes
-    localStorage.setItem("progress", progress);
-  }, [progress]);
 
-    return{
-        setShowTitle,
-        setprogress,
-        setVideos,
-        ShowTitle,
-        progress,
-        videos,
-        handleclick,
-    }
-    
+  return {
+    setShowTitle,
+    setprogress,
+    setVideos,
+    ShowTitle,
+    progress,
+    videos,
+    handleclick,
+  }
+
 }
 export default ShowTitleInput;

@@ -55,7 +55,7 @@ const DataAnalysisShowVideo = () => {
                                    
                                 />
                                 <div className="complete-btn-box">
-                                    <button className="completed-video" onClick={handleclick}>Mark As Done</button>
+                                    <button className="completed-video" onClick={handleclick}>Start Course</button>
                                    
                                 </div>
                                 <LinearProgress variant="determinate" value={progress} max='100'/>

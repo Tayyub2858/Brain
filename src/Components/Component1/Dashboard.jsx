@@ -10,9 +10,9 @@ import icon3 from '../../Assets/Dashboard/180_Day_Streak.png';
 import icon4 from '../../Assets/Dashboard/Excel_Dashboard_Design.png';
 import icon5 from '../../Assets/Dashboard/Advanced_Tableau.png';
 import DrawerDasboard from "../../Modules/Drawer/DasboardDrawer";
-
+import { useSelector } from "react-redux";
 const DashBoard = () => {
-
+const formTitle = useSelector((state)=>state.formReducer.title)
     return (
         <>
             <DrawerDasboard componentName={"Dashboard"}/>
@@ -30,10 +30,10 @@ const DashBoard = () => {
                                         </Grid>
                                         <Grid item xs={12} sm={12} md={9}>
                                             <div className="recent-course-text">
-                                                <h2 className="recent-course-title">Excel Pro Tips : Analytics</h2>
+                                                <h2 className="recent-course-title">{formTitle}</h2>
                                                 <div className="progress-recent-course">
-                                                    <LinearProgress variant="determinate" className="progressbarwithlabel" value={35} />
-                                                    <p className="progress-value">35%</p>
+                                                    {/* <LinearProgress variant="determinate" className="progressbarwithlabel" value={35} /> */}
+                                                    {/* <p className="progress-value">35%</p> */}
                                                 </div>
                                                 <div className="recent-course-btn">
                                                     <button className="course-detail-btn">View Course Detials</button>
