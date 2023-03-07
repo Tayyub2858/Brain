@@ -1,0 +1,39 @@
+.client-counter-container {
+  padding: 5% 15% 5% 15%;
+  background: url(../../Assets//Front-Page/tagline.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.counter {
+  display: block;
+  margin: auto;
+  text-align: center;
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+  font-size: 40px;
+  font-weight: 700;
+}
+.counter-title {
+  display: block;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 5%;
+  color: var(--mediumText);
+  font-size: 30px;
+}
+@media only screen and (max-device-width: 768px){
+    .client-counter-container{
+        padding: 5%;
+    }
+    .counter{
+        font-size: 16px;
+    }
+    .counter-title{
+        font-size: 8px;
+        font-weight: 600;
+    }
+}

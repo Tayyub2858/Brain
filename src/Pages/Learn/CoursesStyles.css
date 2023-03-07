@@ -63,7 +63,7 @@
 .loader{
   display: block;
   margin: auto;
-  width: 70%;
+  width: 10%;
   background: none;
 }
 @media only screen and (max-device-width: 768px) {

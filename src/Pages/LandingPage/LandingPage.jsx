@@ -11,6 +11,7 @@ import Showcase from "../../Modules/Module 7/Showcase";
 import Career from "../../Modules/Module 4/Career";
 import Build from "../../Modules/Module 5/Build";
 import Skills from "../../Modules/Module 6/Skills";
+import ClientCounter from "../../Modules/Module 11/ClientCounter";
 const LandingPage = () => {
   return (
     <>
@@ -19,6 +20,7 @@ const LandingPage = () => {
       <Software />
       <DreamJob />
       <Career />
+      <ClientCounter />
       <Showcase />
       <Build />
       <Skills />

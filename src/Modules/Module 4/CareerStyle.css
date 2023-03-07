@@ -1,43 +1,26 @@
-/* :root {
-    --blue: #25257c;
-    --yellow: #FACA28;
-    --gradient: linear-gradient(to right, #3F3F95 0%, #FACA28 100%);
-    --leftgradient: linear-gradient(to right, #FACA28 0%, #25257c 100%);
-    --smallText: #A8A8A8;
-    --mediumText: #DFDFDF;
-    --buttonColor: #3D3D3D;
-    --backgroundColor: #F9F9F9;
-    --white: #FFFFFF;
-    --dark: #252525;
-    --grey: #4A4A4A;
-    --endFooter: #2B2B2B;
-} */
+
 .career-container{
     margin-top: 2%;
-    padding: 5% 0% 5% 0%;
+    padding: 3% 0% 3% 0%;
     background: var(--gradient);
-}.career-box{
-    width: 70%;
-    height: 32vh;
+}
+.career-box{
+    width: 80%;
     background: var(--white);
     margin: auto;
-    position: relative;
     border-radius: 30px;
-    display: flex;    
 }
 .career-text{
     font-size: large;
     font-weight: bold;
     color: var(--endFooter);
-    padding: 5%;
-    padding-top: 10%;
+    padding: 7%;
+    text-align: center;
 }
 .caree-img{
     width: 50%;
-    height: 60%;
-    border-radius: 100%;
-    margin-left: 23%;
-    margin-top: 8%;
+    display: block;
+    margin: auto;
 
 }
 .career-img-name{

@@ -5,7 +5,7 @@ import './CoursesStyles.css';
 import CourseCard from './CourseCard';
 import { Grid } from '@material-ui/core';
 // import CourseImg from '../../Assets/Learn/Self-course/Course-hero_2x.png';
-import Loader from '../../Assets/Front-Page/Loader.gif'
+import Loader from '../../Assets/Front-Page/Loader.svg'
 
 const Courses = () => {
     const [loader, setloader] = React.useState(true);
