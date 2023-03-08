@@ -5,7 +5,7 @@ const DataAnalysisinput = [
         img : img,
         title : "Data Analysis & Visualization In PBI",
         btn : "Watch Videos",
-        link : "/learning-path/accounting&finance/data-analysis&visualization-in-power-bi/videos",
+        link : "/learning-path/accounting&finance/data-analysis&visualization-in-power-bi/",
     },
     {
         key : 2,

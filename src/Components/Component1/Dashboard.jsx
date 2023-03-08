@@ -11,11 +11,16 @@ import icon4 from '../../Assets/Dashboard/Excel_Dashboard_Design.png';
 import icon5 from '../../Assets/Dashboard/Advanced_Tableau.png';
 import DrawerDasboard from "../../Modules/Drawer/DasboardDrawer";
 import { useSelector } from "react-redux";
+import ShowTitleInput from '../../LearningPath/DataAnalysis/DataAnalysisVidos/ShowTitleInput';
 const DashBoard = () => {
-const formTitle = useSelector((state)=>state.formReducer.title)
+    const {
+        progress
+    } = ShowTitleInput();
+    const formTitle = useSelector((state) => state.formReducer.title)
+    const storedButton = localStorage.getItem('formtitle');
     return (
         <>
-            <DrawerDasboard componentName={"Dashboard"}/>
+            <DrawerDasboard componentName={"Dashboard"} />
 
             <div className="dashbord-container">
                 <Grid container>
@@ -30,10 +35,10 @@ const formTitle = useSelector((state)=>state.formReducer.title)
                                         </Grid>
                                         <Grid item xs={12} sm={12} md={9}>
                                             <div className="recent-course-text">
-                                                <h2 className="recent-course-title">{formTitle}</h2>
+                                                <h2 className="recent-course-title">{storedButton}</h2>
                                                 <div className="progress-recent-course">
-                                                    {/* <LinearProgress variant="determinate" className="progressbarwithlabel" value={35} /> */}
-                                                    {/* <p className="progress-value">35%</p> */}
+                                                    <LinearProgress variant="determinate" className="progressbarwithlabel" value={progress} max={100} />
+                                                    <p className="progress-value">{progress}%</p>
                                                 </div>
                                                 <div className="recent-course-btn">
                                                     <button className="course-detail-btn">View Course Detials</button>
@@ -93,50 +98,50 @@ const formTitle = useSelector((state)=>state.formReducer.title)
                                     <div className="progess-section">
                                         <h3>Microsoft Power BI Desktop</h3>
                                         <div className="progress-barsection">
-                                                    <LinearProgress variant="determinate" className="progressbarwithlabel" value={100} />
-                                            
+                                            <LinearProgress variant="determinate" className="progressbarwithlabel" value={100} />
+
                                             <p className="progress-value">100%</p>
                                         </div>
                                         <h3>Microsoft Power BI Service</h3>
                                         <div className="progress-barsection">
-                                                    <LinearProgress variant="determinate" className="progressbarwithlabel" value={80} />
-                                            
+                                            <LinearProgress variant="determinate" className="progressbarwithlabel" value={80} />
+
                                             <p className="progress-value">80%</p>
                                         </div>
                                         <h3>Thinking Like an Analyst</h3>
                                         <div className="progress-barsection">
-                                                    <LinearProgress variant="determinate" className="progressbarwithlabel" value={75} />
-                                            
+                                            <LinearProgress variant="determinate" className="progressbarwithlabel" value={75} />
+
                                             <p className="progress-value">75%</p>
                                         </div>
                                         <h3>Advanced DAX for Power BI</h3>
                                         <div className="progress-barsection">
-                                                    <LinearProgress variant="determinate" className="progressbarwithlabel" value={60} />
-                                            
+                                            <LinearProgress variant="determinate" className="progressbarwithlabel" value={60} />
+
                                             <p className="progress-value">60%</p>
                                         </div>
                                         <h3>Microsoft PL-3000 Exam Prep</h3>
                                         <div className="progress-barsection">
-                                                    <LinearProgress variant="determinate" className="progressbarwithlabel" value={45} />
-                                            
+                                            <LinearProgress variant="determinate" className="progressbarwithlabel" value={45} />
+
                                             <p className="progress-value">45%</p>
                                         </div>
                                         <h3>Excel Pro Tips: Analytics</h3>
                                         <div className="progress-barsection">
-                                                    <LinearProgress variant="determinate" className="progressbarwithlabel" value={80} />
-                                            
+                                            <LinearProgress variant="determinate" className="progressbarwithlabel" value={80} />
+
                                             <p className="progress-value">80%</p>
                                         </div>
                                         <h3>Microsoft Power BI Desktop</h3>
                                         <div className="progress-barsection">
-                                                    <LinearProgress variant="determinate" className="progressbarwithlabel" value={70} />
-                                            
+                                            <LinearProgress variant="determinate" className="progressbarwithlabel" value={70} />
+
                                             <p className="progress-value">70%</p>
                                         </div>
                                         <h3>Microsoft Power BI Desktop</h3>
                                         <div className="progress-barsection">
-                                                    <LinearProgress variant="determinate" className="progressbarwithlabel" value={20} />
-                                            
+                                            <LinearProgress variant="determinate" className="progressbarwithlabel" value={20} />
+
                                             <p className="progress-value">20%</p>
                                         </div>
                                     </div>

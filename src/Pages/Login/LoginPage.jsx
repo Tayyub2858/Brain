@@ -3,6 +3,9 @@ import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { app } from '../../ConfigFile/Firebase-Config';
 import { useNavigate } from 'react-router-dom';
 import { Modal } from '@material-ui/core';
+import ForgetPassword from '../ForgetPassword/ForgetPassword';
+import { AiOutlineCloseCircle } from "react-icons/ai";
+
 import './LoginPageStyles.css'
 
 const auth = getAuth(app)
@@ -43,29 +46,31 @@ const LoginPage = () => {
           className='login-modal'
         >
           <div className="login-container">
+            <button onClick={handleClose} className="fotget-close"><AiOutlineCloseCircle /></button>
+
             <div className='login-box'>
-            <h1 className='login-title'>Log In to your Account</h1>
-            <br />
-            <input
-            className='input-text'
-              type="email"
-              placeholder="Enter your email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            ></input>
-            <br />
-            <br />
-            <input
-            className='input-text'
-              type="password"
-              placeholder="Enter your password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            >
-            </input>
-            {/* <p className='forgot-password'>forgot password</p> */}
-            <br />
-            <button className='login-btn' onClick={signIn}>Log In</button>
+              <h1 className='login-title'>Log In to your Account</h1>
+              <br />
+              <input
+                className='input-text'
+                type="email"
+                placeholder="Enter your email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              ></input>
+              <br />
+              <br />
+              <input
+                className='input-text'
+                type="password"
+                placeholder="Enter your password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              >
+              </input>
+              <ForgetPassword />
+              <br />
+              <button className='login-btn' onClick={signIn}>Log In</button>
             </div>
           </div>
         </Modal>

@@ -18,6 +18,7 @@ import VirtualAssistant from './LearningPath/Virtula-Assistant/VirtualAssistant'
 import WebDevelopment from './LearningPath/WebDevelopment/WebDevelopment';
 import DataAnalysisShowVideo from './LearningPath/DataAnalysis/DataAnalysisVidos/DataAanalysisShow-video';
 import AdvanceFinancialShowVideo from './LearningPath/DataAnalysis/AdvanceFinancialVideo/AdvanceFinancialShow-video';
+import CoursePage from './LearningPath/DataAnalysis/DataAnalysisVidos/StartCoursePage/CoursePage';
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 function App() {
@@ -49,6 +50,7 @@ function App() {
           <Route path='/learning-path/accounting&finance/advanced-financial-reporting-in-power-bi/videos' exact element={<AdvanceFinancialShowVideo />} />
           <Route path='/learning-path/virtualassistant' exact element={<VirtualAssistant />} />
           <Route path='/learning-path/webdevelopment' exact element={<WebDevelopment />} />
+          <Route path='/learning-path/accounting&finance/data-analysis&visualization-in-power-bi/' exact element={<CoursePage />} />
         </Routes>
       </BrowserRouter>
     </>
