@@ -37,7 +37,7 @@ const LoginPage = () => {
 
     <>
       <div>
-        <button className='nav-btn' id='popup' onClick={handleOpen}>LOGIN</button>
+        <button className='nav-btn' disabled id='popup' onClick={handleOpen}>LOGIN</button>
         <Modal
           open={open}
           onClose={handleClose}
