@@ -7,6 +7,8 @@ const ShowTitleInput = () => {
   const [fetchtitle, setfetchtitle] = useState();
   const [videos, setVideos] = useState(" ");
   const [visible, setvisible] = useState(false);
+  const [introvisibilty, setintrovisibility] = useState(false);
+  const [transfervisibility, settransfervisibility] = useState(false);
 
 
 
@@ -27,6 +29,12 @@ const ShowTitleInput = () => {
   const clickbutton = () => {
     setvisible(!visible);
   }
+  const introHandler = () => {
+    setintrovisibility(!introvisibilty);
+  }
+  const transferHandler = () => {
+    settransfervisibility(!transfervisibility);
+  }
 
   return {
     setShowTitle,
@@ -43,6 +51,11 @@ const ShowTitleInput = () => {
     fetchtitle,
     handleprogress,
     clickbutton,
+    introvisibilty,
+    transfervisibility,
+    transferHandler,
+    introHandler,
+
     // handleclick,
 
   }

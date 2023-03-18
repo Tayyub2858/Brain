@@ -7,6 +7,9 @@ import { Grid } from "@material-ui/core";
 import { AiOutlineMinusCircle } from "react-icons/ai";
 import { AiOutlinePlusCircle } from "react-icons/ai";
 // import {LinearProgress} from "@material-ui/core";
+import DataAnalysisVideoIntro from "./IntroVideo";
+import OrientationVideo from "./OrientationVideo";
+import TransferData from "./TransferData";
 import ShowTitleInput from "./ShowTitleInput";
 const DataAnalysisShowVideo = () => {
 
@@ -16,6 +19,10 @@ const DataAnalysisShowVideo = () => {
         setVideos,
         handleprogress,
         clickbutton,
+        transferHandler,
+        introHandler,
+        transfervisibility,
+        introvisibilty
     } = ShowTitleInput()
     return (
         <>
@@ -27,7 +34,29 @@ const DataAnalysisShowVideo = () => {
                             <button className="content-btn" onClick={clickbutton}>Data analysis and PBI{visible ? <AiOutlineMinusCircle style={{ color: 'red', fontSize: '20px', position: 'absolute', left: '24%' }} /> : <AiOutlinePlusCircle style={{ color: 'green', fontSize: '20px', position: 'absolute', left: '24%' }} />}</button>
                             {visible ?
                                 <div className="lecture-content-video">
-                                    {DataAnalysisVideo.map((coursevideo, index) => (
+                                    {DataAnalysisVideoIntro.map((coursevideo, index) => (
+                                        <div key={index} >
+                                            <button className="content-lect-btn" onClick={() => setVideos(coursevideo.video)}>{coursevideo.title}</button>
+                                        </div>
+                                    ))
+                                    }
+                                </div>
+                                : null}
+                            <button className="content-btn" onClick={introHandler}>Introduction{introvisibilty ? <AiOutlineMinusCircle style={{ color: 'red', fontSize: '20px', position: 'absolute', left: '24%' }} /> : <AiOutlinePlusCircle style={{ color: 'green', fontSize: '20px', position: 'absolute', left: '24%' }} />}</button>
+                            {introvisibilty ?
+                                <div className="lecture-content-video">
+                                    {OrientationVideo.map((coursevideo, index) => (
+                                        <div key={index} >
+                                            <button className="content-lect-btn" onClick={() => setVideos(coursevideo.video)}>{coursevideo.title}</button>
+                                        </div>
+                                    ))
+                                    }
+                                </div>
+                                : null}
+                            <button className="content-btn" onClick={transferHandler}>Connecting, Cleaning <br /> & transforming Data{transfervisibility ? <AiOutlineMinusCircle style={{ color: 'red', fontSize: '20px', position: 'absolute', left: '24%' }} /> : <AiOutlinePlusCircle style={{ color: 'green', fontSize: '20px', position: 'absolute', left: '24%' }} />}</button>
+                            {transfervisibility ?
+                                <div className="lecture-content-video">
+                                    {TransferData.map((coursevideo, index) => (
                                         <div key={index} >
                                             <button className="content-lect-btn" onClick={() => setVideos(coursevideo.video)}>{coursevideo.title}</button>
                                         </div>
