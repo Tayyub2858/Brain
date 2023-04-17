@@ -5,7 +5,7 @@ import { getDocs,collection } from '@firebase/firestore/lite';
     try { const Users = collection(db , 'CourseCards')
      const Ushnapshot = await getDocs(Users);
      const UsersList = Ushnapshot.docs.map(doc => ({...doc.data(),id:doc.id}));
-    // console.log(UsersList);
+   //  console.log(UsersList);
     Data.push(...UsersList)
     console.log(Data);
   } catch(err){

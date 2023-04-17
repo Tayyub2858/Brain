@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { addDoc, collection } from "@firebase/firestore/lite";
 import { db, app } from "../../ConfigFile/Firebase-Config";
-import { Await } from "react-router-dom";
+// import { Await } from "react-router-dom";
 // import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth'
 
 // const auth = getAuth(app);
@@ -27,7 +27,9 @@ const SignupInput = () => {
 
 
     const registerUser = async() => {
-
+        setfirstName("");
+        setPhoneNumber("");
+        setemailAddress("");
        await addDoc(collection (db, "User-Info"), {
         Name:firstName,
         Email:emailAddress,
@@ -48,24 +50,24 @@ const SignupInput = () => {
     })
 
 
-        console.log(
-            firstName,
-            emailAddress,
-            PhoneNumber,
-            course1,
-            course2,
-            course3,
-            course4,
-            course5,
-            course6,
-            course7,
-            course8,
-            course9,
-            course10,
-            course11,
-            course12,
-            course13,
-        );
+        // console.log(
+        //     firstName,
+        //     emailAddress,
+        //     PhoneNumber,
+        //     course1,
+        //     course2,
+        //     course3,
+        //     course4,
+        //     course5,
+        //     course6,
+        //     course7,
+        //     course8,
+        //     course9,
+        //     course10,
+        //     course11,
+        //     course12,
+        //     course13,
+        // );
     }
     // const [password, setpassword] = useState("");
 
