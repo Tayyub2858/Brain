@@ -60,7 +60,7 @@ const DataSetCard = () => {
                                 </p>
                             </Grid>
                             <Grid item xs={4} sm={4} md={2}>
-                                <a href={WorldCupDataSet} download="Data Set" target='_blank'>
+                                <a href={WorldCupDataSet} download="DataSet" target='blank'>
                                     <button className="dataset-download">Download</button>
                                 </a>
                             </Grid>

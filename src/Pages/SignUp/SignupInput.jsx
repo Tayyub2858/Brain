@@ -1,53 +1,96 @@
 import { useState } from "react";
-import { addDoc, collection } from "@firebase/firestore/lite";
-import { db, app } from "../../ConfigFile/Firebase-Config";
+// import { addDoc, collection } from "@firebase/firestore/lite";
+// import { db, app } from "../../ConfigFile/Firebase-Config";
+import axios from "axios";
 // import { Await } from "react-router-dom";
 // import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth'
 
 // const auth = getAuth(app);
 
 const SignupInput = () => {
-    const [firstName, setfirstName] = useState("");
-    const [PhoneNumber, setPhoneNumber] = useState("");
-    const [emailAddress, setemailAddress] = useState("");
-    const [course1, setCourse1] = useState(null);
-    const [course2, setCourse2] = useState(null);
-    const [course3, setCourse3] = useState(null);
-    const [course4, setCourse4] = useState(null);
-    const [course5, setCourse5] = useState(null);
-    const [course6, setCourse6] = useState(null);
-    const [course7, setCourse7] = useState(null);
-    const [course8, setCourse8] = useState(null);
-    const [course9, setCourse9] = useState(null);
-    const [course10, setCourse10] = useState(null);
-    const [course11, setCourse11] = useState(null);
-    const [course12, setCourse12] = useState(null);
-    const [course13, setCourse13] = useState(null);
-
-
-
-    const registerUser = async() => {
-        setfirstName("");
-        setPhoneNumber("");
-        setemailAddress("");
-       await addDoc(collection (db, "User-Info"), {
-        Name:firstName,
-        Email:emailAddress,
-        PhoneNbr:PhoneNumber,
-        course1:course1,
-        course2:course2,
-        course3:course3,
-        course4:course4,
-        course5:course5,
-        course6:course6,
-        course7:course7,
-        course8:course8,
-        course9:course9,
-        course10:course10,
-        course11:course11,
-        course12:course12,
-        course13:course13
+    // const [name, setname] = useState("");
+    // const [email, setemail] = useState("");
+    // const [cellnbr, setcellnbr] = useState("");
+    // const [course1, setCourse1] = useState(null);
+    // const [course2, setCourse2] = useState(null);
+    // const [course3, setCourse3] = useState(null);
+    // const [course4, setCourse4] = useState(null);
+    // const [course5, setCourse5] = useState(null);
+    // const [course6, setCourse6] = useState(null);
+    // const [course7, setCourse7] = useState(null);
+    // const [course8, setCourse8] = useState(null);
+    // const [course9, setCourse9] = useState(null);
+    // const [course10, setCourse10] = useState(null);
+    // const [course11, setCourse11] = useState(null);
+    // const [course12, setCourse12] = useState(null);
+    // const [course13, setCourse13] = useState(null);
+    const [value , setvalue] = useState({
+        name : '',
+        email : '',
+        cellnbr : '',
+        course1 : '',
+        course2 : '',
+        course3 : '',
+        course4 : '',
+        course5 : '',
+        course6 : '',
+        course7 : '',
+        course8 : '',
+        course9 : '',
+        course10 : '',
+        course11 : '',
+        course12 : '',
+        course13 : '',
     })
+
+    const apiUrl = "http://localhost:8000";
+
+
+    const registerUser = (e) => {
+        e.preventDefault();
+        setvalue({
+            name : '',
+            email : '',
+            cellnbr : '',
+            course1 : '',
+            course2 : '',
+            course3 : '',
+            course4 : '',
+            course5 : '',
+            course6 : '',
+            course7 : '',
+            course8 : '',
+            course9 : '',
+            course10 : '',
+            course11 : '',
+            course12 : '',
+            course13 : '',
+        })
+    
+        // checkthe Email is match or not 
+
+        // const Checkemail = () =>{
+        //     axios.get(`${apiUrl}/checkemail`)
+        //     .then(res => res.json())
+        //     .then(data =>{
+        //         if(data.includes(email)){
+        //           alert("Email is already exist");
+        //         }
+        //       })
+        // }
+
+       axios.post(`${apiUrl}/usercreate`,value)
+       .then(res=>{
+        if(res.data.Status === "Success")
+        {
+            console.log(res.message);
+        }
+        else{
+            alert("Successfully Register");
+        }
+    })
+    // Checkemail();
+       
 
 
         // console.log(
@@ -125,27 +168,28 @@ const SignupInput = () => {
     // }
 
     return {
-        setfirstName,
-        setPhoneNumber,
-        setemailAddress,
-        firstName,
-        PhoneNumber,
-        emailAddress,
-
+        // setname,
+        // setcellnbr,
+        // setemail,
+        // name,
+        // cellnbr,
+        // email,
+        value,
+        setvalue,
         registerUser,
-        course1, setCourse1,
-        course2, setCourse2,
-        course3, setCourse3,
-        course4, setCourse4,
-        course5, setCourse5,
-        course6, setCourse6,
-        course7, setCourse7,
-        course8, setCourse8,
-        course9, setCourse9,
-        course10, setCourse10,
-        course11, setCourse11,
-        course12, setCourse12,
-        course13, setCourse13,
+        // course1, setCourse1,
+        // course2, setCourse2,
+        // course3, setCourse3,
+        // course4, setCourse4,
+        // course5, setCourse5,
+        // course6, setCourse6,
+        // course7, setCourse7,
+        // course8, setCourse8,
+        // course9, setCourse9,
+        // course10, setCourse10,
+        // course11, setCourse11,
+        // course12, setCourse12,
+        // course13, setCourse13,
     }
 }
 export default SignupInput;

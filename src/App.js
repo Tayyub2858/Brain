@@ -21,10 +21,29 @@ import AdvanceFinancialShowVideo from './LearningPath/DataAnalysis/AdvanceFinanc
 import CoursePage from './LearningPath/DataAnalysis/DataAnalysisVidos/StartCoursePage/CoursePage';
 import AOS from 'aos'
 import 'aos/dist/aos.css';
+import Privateroutes from './PrivateRoutes/Privateroutes';
+// import the all admin dashboard routing links 
+import AdminDashbaord from './AdminPanal/Components/AdminDashboard/AdminDashbaord';
+import User from './AdminPanal/Components/Users/User';
+import AddUserForm from './AdminPanal/Components/Users/AddUserForm/AddUserForm';
+import Course from './AdminPanal/Components/Courses/Course';
+import AddNewCourse from './AdminPanal/Components/Courses/AddNewCourse/AddNewCourse';
+import AdminLearningPath from './AdminPanal/Components/LearningPath/adminLearningPath';
+import LearningPathAdd from './AdminPanal/Components/LearningPath/LearningPathAdd/LearningPathAdd';
+import Video from './AdminPanal/Components/Videos/Video';
+import ClintRequest from './AdminPanal/Components/ClintRequest/ClintRequest';
+import AddNewClintRequest from './AdminPanal/Components/ClintRequest/AddNewClintRequest/AddNewClintRequest';
+import Contacts from './AdminPanal/Components/Contacts/Contacts';
+import AddContact from './AdminPanal/Components/Contacts/AddContact/AddContact';
+import GalleryData from './AdminPanal/Components/Gallery/Gallery';
+import EditUserForm from './AdminPanal/Components/Users/EditUserForm/EditUserForm';
+import EditCourse from './AdminPanal/Components/Courses/EditCourse/EditCourse';
+import EditClintRequest from './AdminPanal/Components/ClintRequest/EditClintRequest/EditClintRequest';
+
 function App() {
   useEffect(() => {
     AOS.init(
-      {once: true }
+      { once: true }
     );
   }, [])
   return (
@@ -40,6 +59,8 @@ function App() {
           <Route path='/blog' exact element={<BlogMainPage />} />
           <Route path='/signup' exact element={<Signup />} />
           {/* add private Routes */}
+          <Route path='/' element={<Privateroutes />}></Route>
+          {/* Add private routes  */}
           <Route path='/learning-path' exact element={<LearningPath />} />
           <Route path='/data-playground' exact element={<DataPlayground />} />
           <Route path='/dashboard' exact element={<DashBoard />} />
@@ -51,6 +72,26 @@ function App() {
           <Route path='/learning-path/virtualassistant' exact element={<VirtualAssistant />} />
           <Route path='/learning-path/webdevelopment' exact element={<WebDevelopment />} />
           <Route path='/learning-path/accounting&finance/data-analysis&visualization-in-power-bi/' exact element={<CoursePage />} />
+
+          {/* AdminPanal Dashbaord add all routing pages  */}
+
+          <Route path='/admin' element={<AdminDashbaord />} />
+          <Route path='/admin/Dashboard' element={<AdminDashbaord />} />
+          <Route path='/admin/Users' element={<User />} />
+          <Route path='/Users/Adduser' element={<AddUserForm />} />
+          <Route path='/Users/Edit/:id' element={<EditUserForm/>}/>
+          <Route path='/admin/Courses' element={<Course />} />
+          <Route path='/Courses/AddNewCourse' element={<AddNewCourse />} />
+          <Route path='/Course/Edit/:id' element={<EditCourse/>}/>
+          <Route path='/admin/LearningPath' element={<AdminLearningPath/>} />
+          <Route path='/LearningPath/AddLearningpath' element={<LearningPathAdd/>} />
+          <Route path='/admin/Videos' element={<Video/>} />
+          <Route path='/admin/ClintRequest' element={<ClintRequest />} />
+          <Route path='/ClintRequest/AddNewClintRequest' element={<AddNewClintRequest />} />
+          <Route path='/ClintRequest/Edit/:id' element={<EditClintRequest/>}/>
+          <Route path='/admin/Contact' element={<Contacts />} />
+          <Route path='/Contact/Addcontact' element={<AddContact />} />
+          <Route path='/admin/Gallery' element={<GalleryData/>} />
         </Routes>
       </BrowserRouter>
     </>

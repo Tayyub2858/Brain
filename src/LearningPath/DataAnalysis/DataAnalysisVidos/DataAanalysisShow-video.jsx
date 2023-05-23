@@ -1,7 +1,7 @@
 import React from "react";
 import './DataAnalysisShowVideoStyle.css';
 import ReactPlayer from "react-player";
-import DataAnalysisVideo from "./DataAnalysis-Video";
+// import DataAnalysisVideo from "./DataAnalysis-Video";
 import DrawerDasboard from "../../../Modules/Drawer/DasboardDrawer";
 import { Grid } from "@material-ui/core";
 import { AiOutlineMinusCircle } from "react-icons/ai";

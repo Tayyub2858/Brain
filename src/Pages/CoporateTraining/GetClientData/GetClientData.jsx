@@ -1,58 +1,78 @@
-import { collection, addDoc } from "@firebase/firestore/lite";
-import { db } from "../../../ConfigFile/Firebase-Config";
+// import { collection, addDoc } from "@firebase/firestore/lite";
+// import { db } from "../../../ConfigFile/Firebase-Config";
+import axios from "axios";
 import { useState } from "react";
+import { ApiUrl } from '../../../Apis/ApiUrl';
 const GetClientData = () => {
-    const [firstName, setfirstName] = useState("");
-    const [lastName, setlastName] = useState("");
-    const [emailAddress, setemailAddress] = useState("");
-    const [compnyName, setcompanyName] = useState("");
-    const [compnySize, setcompanySize] = useState("");
-    const [hearBain, sethearBrain] = useState("");
-    const [traningGoal, settraningGoal] = useState("");
+    const [fname, setfname] = useState("");
+    const [lname, setlname] = useState("");
+    const [email, setemail] = useState("");
+    const [compname, setcompname] = useState("");
+    // const [compsize, setcompsize] = useState("");
+    const [hearbrain, sethearbrain] = useState("");
+    const [traninggoal, settraninggoal] = useState("");
 
     const requestHandler = async (e) => {
         e.preventDefault();
-        await addDoc(collection(db, "ClintRequests"), {
-            FirstName: firstName,
-            LastName: lastName,
-            Email: emailAddress,
-            CompanyName: compnyName,
-            CompanySize: compnySize,
-            HearaboutBrainanalyic: hearBain,
-            TrainingGoals: traningGoal,
-        }).then(function (res) {
-            alert("Request Send Succussfully")
-            console.log(res)
-        }).catch(function (res) {
-            alert("Request cannot Send Successfully")
-            console.log(res)
+        // Firebase code or commneted
+        // await addDoc(collection(db, "ClintRequests"), {
+        //     fname: fname,
+        //     lname: lname,
+        //     Email: email,
+        //     CompanyName: compname,
+        //     CompanySize: compsize,
+        //     HearaboutBrainanalyic: hearbrain,
+        //     TrainingGoals: traninggoal,
+        // }).then(function (res) {
+        //     alert("Request Send Succussfully")
+        //     console.log(res)
+        // }).catch(function (res) {
+        //     alert("Request cannot Send Successfully")
+        //     console.log(res)
+        // })
+        // console.log(fname, lname, email, compname, compsize, hearbrain, traninggoal);
+        setfname("")
+        setlname("")
+        setemail("")
+        setcompname("")
+        // setcompsize("")
+        sethearbrain("")
+        settraninggoal("")
+        axios.post(`${ApiUrl}/clintrequest`, {
+            fname:fname,
+            lname:lname ,
+            email:email,
+            compname:compname,
+            // compsize : compsize,
+            hearbrain:hearbrain,
+            traninggoal:traninggoal,
         })
-        console.log(firstName, lastName, emailAddress, compnyName, compnySize, hearBain, traningGoal);
-
-        setfirstName("")
-        setlastName("")
-        setemailAddress("")
-        setcompanyName("")
-        setcompanySize("")
-        sethearBrain("")
-        settraningGoal("")
+        .then(res=>{
+            if(res.data.Status === "Success")
+            {
+                console.log(res.message);
+            }
+            else{
+                alert("Successfully Register");
+            }
+        });
     }
 
     return {
-        setfirstName,
-        setlastName,
-        setemailAddress,
-        setcompanyName,
-        setcompanySize,
-        sethearBrain,
-        settraningGoal,
-        firstName,
-        lastName,
-        emailAddress,
-        compnyName,
-        compnySize,
-        hearBain,
-        traningGoal,
+        setfname,
+        setlname,
+        setemail,
+        setcompname,
+        // setcompsize,
+        sethearbrain,
+        settraninggoal,
+        fname,
+        lname,
+        email,
+        compname,
+        // compsize,
+        hearbrain,
+        traninggoal,
         requestHandler,
     }
 }

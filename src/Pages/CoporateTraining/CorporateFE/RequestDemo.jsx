@@ -8,21 +8,21 @@ const RequestDemo = () => {
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
     const {
-        setfirstName,
-        setlastName,
-        setemailAddress,
-        setcompanyName,
-        setcompanySize,
-        sethearBrain,
-        settraningGoal,
+        setfname,
+        setlname,
+        setemail,
+        setcompname,
+        // setcompsize,
+        sethearbrain,
+        settraninggoal,
         requestHandler,
-        firstName,
-        lastName,
-        emailAddress,
+        fname,
+        lname,
+        email,
         compnyName,
-        compnySize,
+        // compnySize,
         hearBain,
-        traningGoal
+        traninggoal
     } = GetClientData();
     return (
         <div>
@@ -40,25 +40,25 @@ const RequestDemo = () => {
 
                     <div className="demo-input-container">
                         <p className="input-title-txt">First Name *</p>
-                        <input type="text" onChange={(e)=>setfirstName(e.target.value)} value={firstName} className="demo-input" />
+                        <input type="text" onChange={(e)=>setfname(e.target.value)} value={fname} className="demo-input" required/>
                         <p className="input-title-txt">Last Name *</p>
-                        <input type="text" onChange={(e)=>setlastName(e.target.value)} value={lastName}  className="demo-input" />
+                        <input type="text" onChange={(e)=>setlname(e.target.value)} value={lname}  className="demo-input" required/>
                         <p className="input-title-txt">Business Email Address *</p>
-                        <input type="text" onChange={(e)=>setemailAddress(e.target.value)} value={emailAddress}  className="demo-input" />
+                        <input type="text" onChange={(e)=>setemail(e.target.value)} value={email}  className="demo-input" required/>
                         <p className="input-title-txt">Company Name *</p>
-                        <input type="text" onChange={(e)=>setcompanyName(e.target.value)} value={compnyName}  className="demo-input" />
-                        <p className="input-title-txt">Company Size *</p>
-                        <div onChange={(e)=>setcompanySize(e.target.value)} value={compnySize}  className="radio-container">
-                            <input type="radio" name='companysize'  value="50-99" /><span className="radio-title">50-99</span>
-                            <input type="radio" name='companysize' value="100-199" /><span className="radio-title">100-199</span>
-                            <input type="radio" name='companysize' value="200-299" /><span className="radio-title">200-299</span>
-                            <input type="radio" name='companysize' value="300" /><span className="radio-title">300+</span>
-                        </div>
+                        <input type="text" onChange={(e)=>setcompname(e.target.value)} value={compnyName}  className="demo-input" required/>
+                        {/* <p className="input-title-txt">Company Size *</p> */}
+                        {/* <div onChange={(e)=>setcompsize(e.target.value)} value={compnySize}  className="radio-container">
+                            <input type="radio" name='compsize'  value="50-99" /><span className="radio-title">50-99</span>
+                            <input type="radio" name='compsize' value="100-199" /><span className="radio-title">100-199</span>
+                            <input type="radio" name='compsize' value="200-299" /><span className="radio-title">200-299</span>
+                            <input type="radio" name='compsize' value="300" /><span className="radio-title">300+</span>
+                        </div> */}
 
                         <p className="input-title-txt">How did your hear about Brain Analytics?</p>
-                        <input type="text" onChange={(e)=>sethearBrain(e.target.value)} value={hearBain}  className="demo-input" />
+                        <input type="text" onChange={(e)=>sethearbrain(e.target.value)} value={hearBain}  className="demo-input" required/>
                         <p className="input-title-txt">Tell Us About Your Training Goals</p>
-                        <input type="text" onChange={(e)=>settraningGoal(e.target.value)} value={traningGoal}  className="demo-input" />
+                        <input type="text" onChange={(e)=>settraninggoal(e.target.value)} value={traninggoal}  className="demo-input" required/>
                         <button onClick={requestHandler} className="request-info">Request Information</button>
                     </div>
                 </div>

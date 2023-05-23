@@ -10,14 +10,14 @@ import icon3 from '../../Assets/Dashboard/180_Day_Streak.png';
 import icon4 from '../../Assets/Dashboard/Excel_Dashboard_Design.png';
 import icon5 from '../../Assets/Dashboard/Advanced_Tableau.png';
 import DrawerDasboard from "../../Modules/Drawer/DasboardDrawer";
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 import ShowTitleInput from '../../LearningPath/DataAnalysis/DataAnalysisVidos/ShowTitleInput';
 const DashBoard = () => {
     const {
         progress
     } = ShowTitleInput();
-    const formTitle = useSelector((state) => state.formReducer.title)
-    const storedButton = localStorage.getItem('formtitle');
+    // const formTitle = useSelector((state) => state.formReducer.title)
+    const storedButton = localStorage.getItem('formTitle');
     return (
         <>
             <DrawerDasboard componentName={"Dashboard"} />
@@ -96,49 +96,97 @@ const DashBoard = () => {
                                     <h3 className="progress-heading">COURSE & PATH PROGRESS</h3>
                                     <p className="progress-title">Course</p>
                                     <div className="progess-section">
-                                        <h3>Microsoft Power BI Desktop</h3>
+                                        <h3>Data Analysis & Visualization In PBI</h3>
                                         <div className="progress-barsection">
                                             <LinearProgress variant="determinate" className="progressbarwithlabel" value={100} />
 
                                             <p className="progress-value">100%</p>
                                         </div>
-                                        <h3>Microsoft Power BI Service</h3>
+                                        <h3>Advance Financial Reporting In Power BI</h3>
                                         <div className="progress-barsection">
                                             <LinearProgress variant="determinate" className="progressbarwithlabel" value={80} />
 
                                             <p className="progress-value">80%</p>
                                         </div>
-                                        <h3>Thinking Like an Analyst</h3>
+                                        <h3>Financial Planning & Analysis In Excel & PBI</h3>
                                         <div className="progress-barsection">
                                             <LinearProgress variant="determinate" className="progressbarwithlabel" value={75} />
 
                                             <p className="progress-value">75%</p>
                                         </div>
-                                        <h3>Advanced DAX for Power BI</h3>
+                                        <h3>Search Engine Optimization</h3>
                                         <div className="progress-barsection">
                                             <LinearProgress variant="determinate" className="progressbarwithlabel" value={60} />
 
                                             <p className="progress-value">60%</p>
                                         </div>
-                                        <h3>Microsoft PL-3000 Exam Prep</h3>
+                                        <h3>Social Media Marketing</h3>
                                         <div className="progress-barsection">
                                             <LinearProgress variant="determinate" className="progressbarwithlabel" value={45} />
 
                                             <p className="progress-value">45%</p>
                                         </div>
-                                        <h3>Excel Pro Tips: Analytics</h3>
+                                        <h3>Affiliate Marketing</h3>
                                         <div className="progress-barsection">
                                             <LinearProgress variant="determinate" className="progressbarwithlabel" value={80} />
 
                                             <p className="progress-value">80%</p>
                                         </div>
-                                        <h3>Microsoft Power BI Desktop</h3>
+                                        <h3>Google Ads</h3>
                                         <div className="progress-barsection">
                                             <LinearProgress variant="determinate" className="progressbarwithlabel" value={70} />
 
                                             <p className="progress-value">70%</p>
                                         </div>
-                                        <h3>Microsoft Power BI Desktop</h3>
+                                        <h3>Fundamentals Of Graphic Design</h3>
+                                        <div className="progress-barsection">
+                                            <LinearProgress variant="determinate" className="progressbarwithlabel" value={20} />
+
+                                            <p className="progress-value">20%</p>
+                                        </div>
+                                        <h3>Advance Graphic Designing</h3>
+                                        <div className="progress-barsection">
+                                            <LinearProgress variant="determinate" className="progressbarwithlabel" value={20} />
+
+                                            <p className="progress-value">20%</p>
+                                        </div>
+                                        <h3>Advance Video Editing</h3>
+                                        <div className="progress-barsection">
+                                            <LinearProgress variant="determinate" className="progressbarwithlabel" value={20} />
+
+                                            <p className="progress-value">20%</p>
+                                        </div>
+                                        <h3>Advanced Front-end Development</h3>
+                                        <div className="progress-barsection">
+                                            <LinearProgress variant="determinate" className="progressbarwithlabel" value={20} />
+
+                                            <p className="progress-value">20%</p>
+                                        </div>
+                                        <h3>Modern Web App Development</h3>
+                                        <div className="progress-barsection">
+                                            <LinearProgress variant="determinate" className="progressbarwithlabel" value={20} />
+
+                                            <p className="progress-value">20%</p>
+                                        </div>
+                                        <h3>Hybrid Mobile App Development</h3>
+                                        <div className="progress-barsection">
+                                            <LinearProgress variant="determinate" className="progressbarwithlabel" value={20} />
+
+                                            <p className="progress-value">20%</p>
+                                        </div>
+                                        <h3>Amazon FBA Private Label</h3>
+                                        <div className="progress-barsection">
+                                            <LinearProgress variant="determinate" className="progressbarwithlabel" value={20} />
+
+                                            <p className="progress-value">20%</p>
+                                        </div>
+                                        <h3>Amazon FBA WholeSale</h3>
+                                        <div className="progress-barsection">
+                                            <LinearProgress variant="determinate" className="progressbarwithlabel" value={20} />
+
+                                            <p className="progress-value">20%</p>
+                                        </div>
+                                        <h3>Daraz Virtual Assistant</h3>
                                         <div className="progress-barsection">
                                             <LinearProgress variant="determinate" className="progressbarwithlabel" value={20} />
 

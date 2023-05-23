@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
 import './ConnectStyles.css';
-import Chat from '../../Assets/Front-Page/Chat.png';
+// import Chat from '../../Assets/Front-Page/Chat.png';
 // import Instructors from '../../Assets/Front-Page/Instructors.png'
 import Tahir from '../../Assets/Profiles/Tahir-Aziz.png';
 import AbdulKhaliq from '../../Assets/Profiles/Abdul-Khaliq.png';

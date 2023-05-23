@@ -2,8 +2,8 @@ import React from 'react';
 import './DashboardDrawerStyles.css'
 import { Drawer } from '@material-ui/core'
 import Logo from '../../Assets/Front-Page/Logo4.png'
-import { MdDashboard, MdLocalLibrary, MdOutlineSlowMotionVideo } from 'react-icons/md';
-import { FaClipboardCheck, FaProjectDiagram } from 'react-icons/fa';
+import { MdDashboard, MdLocalLibrary } from 'react-icons/md';
+import { FaProjectDiagram } from 'react-icons/fa';
 import { GrStorage } from 'react-icons/gr';
 import { BiHelpCircle } from 'react-icons/bi';
 import { FiLogOut } from 'react-icons/fi'
