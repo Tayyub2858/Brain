@@ -15,21 +15,20 @@ const BlogSlider = () => {
         <>
             <div className="slider-Container">
 
-                <Swiper  spaceBetween={0}
-                                slidesPerView={1}
-                                autoplay={{
-                                    delay: 2500,
-                                    disableOnInteraction: false,
-                                    pauseOnMouseEnter: true,
-                                }}
-                                pagination={{
-                                    clickable: true,
-                                }}
-                                navigation={true}
-                                modules={[Autoplay, Pagination, Navigation]}
-                                className="mySwiper">
+                <Swiper spaceBetween={0}
+                    slidesPerView={1}
+                    autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                        pauseOnMouseEnter: true,
+                    }}
+                    pagination={{
+                        clickable: true,
+                    }}
+                    navigation={true}
+                    modules={[Autoplay, Pagination, Navigation]}
+                    className="mySwiper">
                     <SwiperSlide>
-
                         <div className="slider-container-box">
                             <Grid container>
                                 <Grid item xs={12} sm={12} md={6}>
@@ -45,12 +44,9 @@ const BlogSlider = () => {
                                     </div>
                                 </Grid>
                             </Grid>
-
-
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-
                         <div className="slider-container-box">
                             <Grid container>
                                 <Grid item xs={12} sm={12} md={6}>
@@ -66,12 +62,9 @@ const BlogSlider = () => {
                                     </div>
                                 </Grid>
                             </Grid>
-
-
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-
                         <div className="slider-container-box">
                             <Grid container>
                                 <Grid item xs={12} sm={12} md={6}>
@@ -87,12 +80,9 @@ const BlogSlider = () => {
                                     </div>
                                 </Grid>
                             </Grid>
-
-
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-
                         <div className="slider-container-box">
                             <Grid container>
                                 <Grid item xs={12} sm={12} md={6}>
@@ -108,12 +98,9 @@ const BlogSlider = () => {
                                     </div>
                                 </Grid>
                             </Grid>
-
-
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-
                         <div className="slider-container-box">
                             <Grid container>
                                 <Grid item xs={12} sm={12} md={6}>
@@ -129,15 +116,9 @@ const BlogSlider = () => {
                                     </div>
                                 </Grid>
                             </Grid>
-
-
                         </div>
                     </SwiperSlide>
-
-
                 </Swiper>
-
-
             </div>
         </>
     )

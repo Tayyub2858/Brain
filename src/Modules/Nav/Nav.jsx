@@ -8,10 +8,12 @@ const Nav = () => {
   const [isMenuClosed, setMenuClosed] = useState(true);
   return (
      <div className="nav-container" >
+        <div className="nav-container-text">
             <nav>
                 <div className="nav-brand">
-             <Link to='/'> <img src={Logo} alt="companylogo" className='company-logo' /></Link>    
+             <Link to='/'> <img src={Logo} alt="companylogo" className='company-logo' /></Link> 
                 </div>
+                
                 <div className="nav-links">
                     <Link to='/'><span className="nav-btn">HOME</span> </Link>   
                     <Link to='/learn'><span className="nav-btn">LEARN</span> </Link>   
@@ -32,17 +34,18 @@ const Nav = () => {
                     <div className="overlay-menu-wrapper">
                         <div className="overlay-menu">
                             <Link to='/'><button className="nav-btn-mb">HOME</button></Link>   
-                            <Link to='/learn'>        <button className="nav-btn-mb">LEARN</button></Link>
+                            <Link to='/learn'><button className="nav-btn-mb">LEARN</button></Link>
                             <Link to='/corporate-training'><button className="nav-btn-mb">CORPORATE TRAINING</button></Link>
-                            <Link to='/pricing'>      <button className="nav-btn-mb">PRICING</button></Link>
+                            <Link to='/pricing'><button className="nav-btn-mb">PRICING</button></Link>
                             <Link to='/Testimonials'> <button className="nav-btn-mb">GALLERY</button></Link>
-                            <Link to='/contact'>      <button className="nav-btn-mb">CONTACT</button></Link>
-                            <Link to='/Login'>        <button className="nav-btn-mb">LOGIN</button></Link>
-                            <Link to='/Signup'>       <button className="signup-mb">SIGN UP</button></Link>
+                            <Link to='/contact'> <button className="nav-btn-mb">CONTACT</button></Link>
+                            <Link to='/Login'><button className="nav-btn-mb">LOGIN</button></Link>
+                            <Link to='/Signup'><button className="signup-mb">SIGN UP</button></Link>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
   )
 }

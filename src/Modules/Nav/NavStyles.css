@@ -18,17 +18,21 @@
 }
 
 .nav-container {
-  background-color: var(--dark);
+  background-color: #162a47;
   width: 100%;
   padding: 0%;
+  
 }
-
+.nav-container-text{
+  width: 80%;
+  margin: auto;
+}
 .company-logo {
-  width: 20%;
-  margin-left: 10%;
+  width: 20%; 
 }
 .signup {
   margin-top: -50px;
+  margin-left: 5px;
   padding: 10px 30px;
   border: none;
   outline: none;
@@ -56,7 +60,7 @@
   font-size:15px ;
   border: none;
   background: none;
-  margin-left: 1%;
+  margin-left: 2%;
   white-space: nowrap;
   text-align: center;
 }
@@ -79,17 +83,19 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em;
+  padding: 1rem 0rem 1rem 0rem;
 }
 
 .nav-links {
   display: none;
-  padding: 0% 5% 0% 0%;
+  padding: 0% 0% 0% 0%;
 }
 
-@media screen and (min-width: 600px) {
+
+
+@media screen and (min-width: 788px) {
   .nav-links {
-    width: 25%;
+    width: 30%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -102,7 +108,7 @@ nav {
   }
 
   .nav-links > a:not(:last-child) {
-    margin-right: 1em;
+    margin-right: 1rem;
   }
 
   .nav-hamburguer-icon {
@@ -111,6 +117,13 @@ nav {
 
   .overlay-container-hidden {
     display: none;
+  }
+}
+@media all and (min-width: 600px) and (max-width: 1024px) {
+  
+  .nav-container{
+    width: 170%;
+    margin: auto;
   }
 }
 @media only screen and (max-device-width: 768px) {

@@ -22,7 +22,7 @@ const Software = () => {
                                 spaceBetween={0}
                                 slidesPerView={5}
                                 autoplay={{
-                                    delay: 2500,
+                                    delay: 1500,
                                     disableOnInteraction: false,
                                     pauseOnMouseEnter: true,
                                 }}

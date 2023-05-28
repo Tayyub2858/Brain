@@ -1,4 +1,5 @@
 import React from "react";
+import './LandingPageStyle.css';
 import Nav from "../../Modules/Nav/Nav";
 import DataAnalysic from "../../Modules/Module 1/DataAnalysic";
 import Footer from "../../Modules/Footer/Footer";
@@ -7,27 +8,36 @@ import Software from "../../Modules/Module 2/Software";
 import DreamJob from "../../Modules/Module 3/DreamJob";
 import TeamTraining from "../../Modules/Module 9/TeamTraining";
 import Connect from "../../Modules/Module 8/Connect";
-import Showcase from "../../Modules/Module 7/Showcase";
 import Career from "../../Modules/Module 4/Career";
-import Build from "../../Modules/Module 5/Build";
-import Skills from "../../Modules/Module 6/Skills";
 import ClientCounter from "../../Modules/Module 11/ClientCounter";
+import CardsCourse from "../../Modules/Module 12/CardsCourse";
+import FeatureCourse from "../../Modules/Module 5/FeaturesCourse";
+import Categories from "../../Modules/Module 6/Categories";
+import Learning from "../../Modules/Module 7/Learning";
+import NavSocialIcons from "../../Modules/NavSocialIcons/NavSocialIcons";
 const LandingPage = () => {
   return (
     <>
-      <Nav />
+    <div className="leanding-container">
+      <NavSocialIcons/>
+      <Nav/>
+      <div className="textcenter-leandingpage">
       <DataAnalysic />
       <Software />
-      <DreamJob />
-      <Career />
-      <ClientCounter />
-      <Showcase />
-      <Build />
-      <Skills />
-      <Connect />
-      <TeamTraining />
-      <Companies />
+      <CardsCourse/>
+      <FeatureCourse/>
+      <Categories/>
+      <Learning/>
+      {/* <DreamJob /> */}
+      {/* <Career /> */}
+      {/* <ClientCounter /> */}
+      {/* <Connect /> */}
+      {/* <TeamTraining /> */}
+      {/* <Companies /> */}
+      </div>
       <Footer />
+    </div>
+     
     </>
   );
 };

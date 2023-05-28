@@ -2,6 +2,7 @@ import React from "react";
 import "./DataAnalysic.css";
 import { Grid } from "@material-ui/core";
 import Brain from "../../Assets/Front-Page/B.gif";
+import Gif from '../../Assets/Animation/ezgif.com-gif-maker-29.gif'
 import { Link } from 'react-router-dom'
 
 const DataAnalysic = () => {
@@ -13,15 +14,15 @@ const DataAnalysic = () => {
           <Grid item xs={12} sm={12} md={8}>
             <div className="Data-container">
               <p className="Data-para-1">LEARN,CREATE,CONNECT</p>
-              <h1 className="Data-heading-1">INNOVATIVE SOLUTIONS</h1>
-              <h1 className="Data-heading-2">Career Launchpad</h1>
+              <h1 className="Data-heading-1">Joy of Learning &</h1>
+              <h1 className="Data-heading-2">teaching...</h1>
               <p className="Data-para-2">
-                Accelerate your career with Brain Analytics' hands-on learning
-                of soft skills, project portfolio building, expert connections
-                and career jumpstart.
+                Brain LMS is a fully-featured education platform that helps instructors to create
+                and publish video courses, live classes, and text courses and earn money, and 
+                helps students to learn in the easiest way..
               </p>
               <div className="Data-btn">
-                <Link to='/signup'><button className="Data-btn-1">Sign Up For Free</button></Link>
+                <Link to='/signup'><button className="Data-btn-1">Start Learning</button></Link>
                 <Link to='/corporate-training'><button className="Data-btn-2">Corporate Training</button></Link>
               </div>
               <p className="Data-para-3">
@@ -31,7 +32,7 @@ const DataAnalysic = () => {
           </Grid>
           <Grid item xs={12} sm={12} md={4}>
             <div className="video-container">
-              <img src={Brain} alt="" className="video-img" />
+              <img src={Gif} alt="" className="video-img" />
             </div>
           </Grid>
         </Grid>

@@ -19,24 +19,22 @@
 
 .dataanalysic-container {
   width: 100%;
-  background-color: var(--dark);
-  margin: 0%;
-  padding: 2% 0% 10% 0%;
-  /* height: 500px; */
-  /* margin-top: -10px; */
+  background: url(../../Assets/Front-Page/background-module2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: fit-content;
 }
 
 .Data-container {
   width: 100%;
   margin-top: -16px;
-  display: block;
-  margin: auto;
+  /* display: block; */
+  /* margin: auto; */
 }
 
 .Data-para-1 {
-  color: var(--smallText);
+  color: #162a47;
   margin-bottom: 1%;
-  margin-left: 140px;
   padding-top: 80px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -44,33 +42,39 @@
 }
 
 .Data-heading-1 {
-  color: var(--white);
-  margin-left: 140px;
-  font-size: 35px;
+  /* color: var(--white); */
+  font-size: 50px;
   margin-top: 0%;
   margin-bottom: 0%;
+  background: #162a47;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold !important;
 }
 
 .Data-heading-2 {
   width: fit-content;
-  background: var(--gradient);
+  background: #162a47;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-left: 140px;
-  font-size: 40px;
+  font-size: 50px;
   margin-top: 0%;
   margin-bottom: 1%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold !important;
 }
 
 .Data-para-2 {
-  color: var(--white);
-  margin-left: 140px;
-  padding: 0% 35% 0% 0%;
+  color:#162a47;
+  padding: 0% 20% 0% 0%;
+  font-size: large;
+  /* color: var(--white); */
   margin-bottom: 2%;
+  justify-content: center;
 }
 
 .Data-btn {
-  margin-left: 140px;
   gap: 1rem;
   padding-top: 10px;
 }
@@ -96,20 +100,21 @@
   background: none;
   padding: 10px;
   border-radius: 10px;
-  border: 1px solid white;
+  border: 1px solid #162a47;
   font-weight: bold;
   font-size: 15px;
-  color: var(--white);
+  color: #162a47;
 }
 
 .Data-btn-2:hover {
   background-color: var(--buttonColor);
   border: 1px solid var(--buttonColor);
   cursor: pointer;
+  color: white;
 }
 
 .Data-para-3 {
-  color: var(--smallText);
+  color: var(--white);
   margin-left: 140px;
   padding-top: 10px;
   font-style: italic;
@@ -119,14 +124,14 @@
  
 }
 .video-img {
-  width: 90%;
-  margin-top: 10%;
-  margin-left:-30% ;
+  width: 100%;
+  margin-top: 30%;
+  margin-left:-20% ;
 }
 @media only screen and (max-device-width: 768px) {
   .video-img {
     height: 350px;
-    margin: 0%;
+    margin: auto;
     width: 100%;
     background-color: var(--white);
   }
@@ -138,10 +143,11 @@
     text-align: center;
     font-size: x-small;
     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
   }
   .Data-para-2 {
     margin: 0;
-    padding: 5%;
+    padding: 5% 15% 5% 15%;
     font-size: x-small;
   }
   .Data-para-3 {
@@ -176,4 +182,11 @@
     padding: 2% 5% 2% 5%;
     font-size: medium;
   }
+}
+@media all and (min-width: 600px) and (max-width: 1024px) {
+  .dataanalysic-container{
+    width: 170%;
+    margin: auto;
+  }
+ 
 }
