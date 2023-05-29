@@ -55,13 +55,13 @@
     margin-left: 5%;
 }
 .icons-nav:hover{
-    color:orange;
+    color:white;
     position: relative;
     transition: all .3s ease;
     top: -5px;
 }
 .navsocial-icons{
-    margin-left: 8%;
+    margin-left: 0%;
     font-size:large;
     line-height: 45px; 
     cursor: pointer;
@@ -70,5 +70,6 @@
 @media only screen and (max-device-width: 768px){
     .navSocialicons-container{
         display: none;
+        height: 7vh;
     }
 }

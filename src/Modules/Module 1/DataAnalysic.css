@@ -74,43 +74,36 @@
   justify-content: center;
 }
 
-.Data-btn {
-  gap: 1rem;
-  padding-top: 10px;
+.search{
+  width: 100%;
+  position: relative;
+  display: flex;
 }
-
-.Data-btn-1 {
-  background: none;
-  font-weight: bold;
-  padding: 10px;
-  border-radius: 10px;
-  background: var(--gradient);
-  font-size: 15px;
-  color: var(--endFooter);
-  border: none;
+.searchTerm{
+  width: 50%;
+    border: 2px solid var(--logocolor);
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 10%);
+    border-right: none;
+    padding: 5px 10px;
+    height: 30px;
+    border-radius: 30px;
+    outline: none;
+    color:var(--textcolor);
+    position: relative;
 }
-
-.Data-btn-1:hover {
-  background: var(--gradient);
+.searchButton{
+  width: 13%;
+  height: 41px;
+  border: 1px solid var(--text-red-color);
+  background:red;
+  text-align: center;
+  border-radius: 30px;
   cursor: pointer;
-}
-
-.Data-btn-2 {
-  margin-left: 30px;
-  background: none;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid #162a47;
-  font-weight: bold;
-  font-size: 15px;
-  color: #162a47;
-}
-
-.Data-btn-2:hover {
-  background-color: var(--buttonColor);
-  border: 1px solid var(--buttonColor);
-  cursor: pointer;
-  color: white;
+  font-size: 14px;
+  color: #FFF;
+  position: absolute;
+  left: 40%;
+  overflow: visible;
 }
 
 .Data-para-3 {
@@ -165,23 +158,19 @@
     font-size: larger;
     margin: auto;
   }
-  .Data-btn {
-    margin: 0%;
-    padding: 10px 15px 10px 15px;
-  }
-  .Data-btn-1 {
-    display: block;
-    margin: auto;
-    padding: 2% 5% 2% 5%;
-    font-size: medium;
-  }
-  .Data-btn-2 {
-    display: block;
-    margin: auto;
-    margin-top: 5%;
-    padding: 2% 5% 2% 5%;
-    font-size: medium;
-  }
+.search{
+ width: 100%;
+}
+.searchTerm{
+  margin: auto;
+}
+.searchButton{
+  position: absolute;
+  width: 20%;
+  position: absolute;
+  left: 60%;
+  margin: auto;
+}
 }
 @media all and (min-width: 600px) and (max-width: 1024px) {
   .dataanalysic-container{

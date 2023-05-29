@@ -21,18 +21,15 @@ const DataAnalysic = () => {
                 and publish video courses, live classes, and text courses and earn money, and 
                 helps students to learn in the easiest way..
               </p>
-              <div className="Data-btn">
-                <Link to='/signup'><button className="Data-btn-1">Start Learning</button></Link>
-                <Link to='/corporate-training'><button className="Data-btn-2">Corporate Training</button></Link>
+              <div className="search">
+                <input type="text" placeholder="Search here....." name="searchTerm" className="searchTerm" />
+                <button className="searchButton">Search</button>
               </div>
-              <p className="Data-para-3">
-                No credit card required, start learning now.
-              </p>
             </div>
           </Grid>
           <Grid item xs={12} sm={12} md={4}>
             <div className="video-container">
-              <img src={Gif} alt="" className="video-img" />
+              <img src={Gif} alt="" className="video-img"  />
             </div>
           </Grid>
         </Grid>
